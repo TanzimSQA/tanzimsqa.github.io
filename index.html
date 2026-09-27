@@ -1,591 +1,1080 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tanzim Rahman | Full Stack SQA Engineer Portfolio</title>
-  <meta name="description" content="Portfolio of Tanzim Rahman - Full Stack SQA Engineer specializing in Test Automation (Playwright, Python, Pytest), Manual QA, Postman API Testing, and JMeter Performance Testing." />
-  
+  <title>Tanzim Rahman | Full Stack SQA Engineer & Test Automation Specialist</title>
+  <meta name="description" content="Portfolio of Tanzim Rahman - Full Stack SQA Engineer specializing in enterprise Playwright & Python automation, Postman API testing, JMeter performance, and manual QA audits." />
+
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
-  
-  <!-- Fonts -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            slate: {
+              950: '#020617',
+              900: '#0b0f19',
+              850: '#111726',
+              800: '#1e293b',
+              700: '#334155',
+            },
+            cyan: {
+              400: '#22d3ee',
+              500: '#06b6d4',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="bg-[#020617] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black min-h-screen relative overflow-x-hidden">
 
-  <div class="ambient-glow"></div>
+  <!-- Ambient Light Orbs -->
+  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed top-20 right-10 w-[28rem] h-[28rem] bg-purple-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 left-1/3 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="nav-logo">
-        <i class="fa-solid fa-shield-halved"></i> Tanzim.SQA
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#deliverables">Deliverables</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact" class="btn-contact-nav">Get In Touch</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-50 transition-colors duration-200 bg-[#020617]/85 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 p-[1px] shadow-lg shadow-cyan-500/20">
+            <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center">
+              <i class="fa-solid fa-shield-halved text-cyan-400 text-sm group-hover:scale-110 transition-transform"></i>
+            </div>
+          </div>
+          <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+            Tanzim Rahman
+          </span>
+        </a>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <div class="status-badge">
-        <span class="status-dot"></span> Available for SQA Engineer & QA Automation Roles
-      </div>
-      
-      <h1 class="hero-title">
-        Hi, I'm <span class="gradient-text">Tanzim Rahman</span>
-      </h1>
-      
-      <p class="hero-subtitle">
-        Full Stack Software Quality Assurance (SQA) Engineer
-      </p>
-      
-      <p class="hero-desc">
-        Crafting resilient software systems through <b>Enterprise Test Automation</b> (Python & Playwright), 
-        rigorous <b>Manual QA Audits</b>, <b>API Testing</b> (Postman & Newman), and <b>Performance Testing</b> (Apache JMeter).
-      </p>
-      
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">
-          <i class="fa-solid fa-code"></i> Explore QA Projects
-        </a>
-        <a href="https://tanzimsqa.github.io/saucedemo-playwright-automation/" target="_blank" class="btn btn-secondary">
-          <i class="fa-solid fa-chart-pie"></i> View Live Test Report
-        </a>
-      </div>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+          <a href="#interactive-lab" class="hover:text-cyan-400 transition-colors">Live Test Lab</a>
+          <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+          <a href="#deliverables" class="hover:text-cyan-400 transition-colors">Deliverables</a>
+          <a href="#credentials" class="hover:text-cyan-400 transition-colors">Certifications</a>
+          <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+        </nav>
 
-      <div class="social-pills">
-        <a href="https://www.linkedin.com/in/tanzimbpl/" target="_blank" class="pill">
-          <i class="fa-brands fa-linkedin text-cyan"></i> LinkedIn
-        </a>
-        <a href="https://github.com/TanzimSQA" target="_blank" class="pill">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-        <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="pill">
-          <i class="fa-brands fa-google-drive"></i> Master Drive Portfolio
-        </a>
-        <a href="mailto:tanzimsqa@gmail.com" class="pill">
-          <i class="fa-solid fa-envelope"></i> tanzimsqa@gmail.com
-        </a>
-        <a href="https://wa.me/8801992321575" target="_blank" class="pill">
-          <i class="fa-brands fa-whatsapp"></i> +880 1992-321575
-        </a>
+        <!-- Right Action Buttons -->
+        <div class="flex items-center gap-3">
+          <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-slate-700/80 bg-slate-900/60 hover:bg-slate-800 hover:border-slate-600 text-xs font-semibold text-slate-200 transition-all">
+            <i class="fa-regular fa-file-lines text-cyan-400"></i>
+            <span>Resume &amp; Drive</span>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all">
+            <i class="fa-solid fa-paper-plane text-[11px]"></i>
+            <span>Hire Me</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Metrics / Stats Section -->
-  <section class="metrics">
-    <div class="container">
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <div class="metric-number">280+</div>
-          <div class="metric-label">Documented & Executed Test Cases</div>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-10 pb-16 lg:pt-16 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+        <!-- Left Column: Copy & CTAs -->
+        <div class="lg:col-span-7 space-y-6">
+
+          <!-- Availability Badge -->
+          <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full text-xs font-medium border border-emerald-500/30 bg-emerald-950/30 backdrop-blur-md">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span class="text-slate-300">Available for SQA Engineer &amp; QA Automation Roles Worldwide</span>
+          </div>
+
+          <!-- Kicker & Main Headline -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-xs sm:text-sm font-semibold tracking-wider uppercase text-cyan-400 font-mono">Tanzim Rahman</span>
+              <span class="text-slate-600">·</span>
+              <span class="text-xs font-mono text-purple-400">Full Stack SQA Engineer</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-balance">
+              Building <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Zero-Defect</span> Test Pipelines &amp; <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent">Reliable</span> Software.
+            </h1>
+          </div>
+
+          <!-- Description -->
+          <p class="text-base sm:text-lg leading-relaxed max-w-2xl text-slate-300">
+            Detail-driven <b>Software Quality Assurance Engineer</b> with an analytical Economics degree and advanced training in Full Stack SQA. Specializing in enterprise 
+            <a href="https://github.com/TanzimSQA/saucedemo-playwright-automation" target="_blank" class="text-cyan-400 font-medium hover:underline">Python + Playwright automation</a>, 
+            Postman API assertions, Apache JMeter stress testing, and exhaustive manual STLC audits to eradicate defects before they touch production.
+          </p>
+
+          <!-- Quick Link Chips -->
+          <div class="flex flex-wrap items-center gap-3 pt-1 text-xs text-slate-400 font-mono">
+            <a href="https://github.com/TanzimSQA" target="_blank" class="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors">
+              <i class="fa-brands fa-github text-slate-500"></i> @TanzimSQA
+            </a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/tanzimbpl/" target="_blank" class="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors">
+              <i class="fa-brands fa-linkedin text-slate-500"></i> linkedin/in/tanzimbpl
+            </a>
+            <span>·</span>
+            <a href="https://tanzimsqa.github.io/saucedemo-playwright-automation/" target="_blank" class="inline-flex items-center gap-1.5 text-cyan-400 hover:underline">
+              <i class="fa-solid fa-chart-line"></i> Live HTML Test Report
+            </a>
+          </div>
+
+          <!-- Buttons Row -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#projects" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+              <i class="fa-solid fa-code"></i>
+              <span>Explore Frameworks</span>
+            </a>
+            <a href="#interactive-lab" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-500/50 hover:-translate-y-0.5 transition-all">
+              <i class="fa-solid fa-flask-vial text-cyan-400"></i>
+              <span>Live Test Simulator</span>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 hover:border-emerald-500/50 hover:-translate-y-0.5 transition-all">
+              <i class="fa-brands fa-google-drive text-emerald-400"></i>
+              <span>Google Drive Portfolio</span>
+            </a>
+          </div>
+
         </div>
-        <div class="metric-card">
-          <div class="metric-number">100%</div>
-          <div class="metric-label">Feature Automation Coverage (SauceDemo POM)</div>
+
+        <!-- Right Column: Profile Card & Quick Stats -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <!-- Background Aura -->
+          <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-600 to-emerald-400 opacity-20 blur-2xl transform rotate-2 pointer-events-none"></div>
+
+          <!-- Glass Card -->
+          <div class="relative w-full max-w-sm sm:max-w-md rounded-2xl p-4 border border-slate-700/70 bg-slate-900/80 shadow-2xl shadow-cyan-950/40 backdrop-blur-xl">
+
+            <!-- Profile Photo Frame -->
+            <div class="relative rounded-xl overflow-hidden aspect-square bg-slate-950/40 mb-4 group border border-slate-800">
+              <img src="profile.jpg" alt="Tanzim Rahman - SQA Engineer" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-80 pointer-events-none"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
+                <span class="font-semibold drop-shadow-md text-slate-100">Tanzim Rahman</span>
+                <span class="font-mono text-cyan-300 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded text-[11px] border border-cyan-500/30">
+                  @TanzimSQA
+                </span>
+              </div>
+            </div>
+
+            <!-- Two Highlights Metrics Boxes -->
+            <div class="grid grid-cols-2 gap-2.5">
+              <div class="p-3 rounded-xl border border-slate-800 bg-slate-950/60">
+                <div class="flex items-center gap-1.5 text-xs text-cyan-400 font-mono mb-1">
+                  <i class="fa-solid fa-bolt text-[11px]"></i>
+                  <span>Test Flakiness</span>
+                </div>
+                <div class="text-xl font-bold font-mono tracking-tight text-cyan-300">&lt; 0.05%</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Self-healing POM locators</div>
+              </div>
+
+              <div class="p-3 rounded-xl border border-slate-800 bg-slate-950/60">
+                <div class="flex items-center gap-1.5 text-xs text-purple-400 font-mono mb-1">
+                  <i class="fa-solid fa-shield-check text-[11px]"></i>
+                  <span>Audit Pass Rate</span>
+                </div>
+                <div class="text-xl font-bold font-mono tracking-tight text-purple-300">99.56%</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">225 live railway test cases</div>
+              </div>
+            </div>
+
+            <!-- Key Work Mini-Grid -->
+            <div class="mt-3 space-y-1.5">
+              <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider px-1">Featured Deliverables</div>
+              <div class="grid grid-cols-2 gap-2 text-xs">
+                
+                <a href="https://github.com/TanzimSQA/saucedemo-playwright-automation" target="_blank" class="p-2 rounded-xl border border-slate-800 bg-slate-950/60 hover:border-cyan-500/50 transition-all flex items-center gap-2 group">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400 shrink-0"></span>
+                  <div class="truncate">
+                    <div class="font-medium text-cyan-400 truncate group-hover:text-cyan-300">SauceDemo POM</div>
+                    <div class="text-[10px] text-slate-400 font-mono">56 Pytest E2E Tests</div>
+                  </div>
+                </a>
+
+                <a href="https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application" target="_blank" class="p-2 rounded-xl border border-slate-800 bg-slate-950/60 hover:border-indigo-500/50 transition-all flex items-center gap-2 group">
+                  <span class="w-2 h-2 rounded-full bg-indigo-400 shrink-0"></span>
+                  <div class="truncate">
+                    <div class="font-medium text-indigo-400 truncate group-hover:text-indigo-300">Railway Audit</div>
+                    <div class="text-[10px] text-slate-400 font-mono">225 IEEE 829 Cases</div>
+                  </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="p-2 rounded-xl border border-slate-800 bg-slate-950/60 hover:border-purple-500/50 transition-all flex items-center gap-2 group">
+                  <span class="w-2 h-2 rounded-full bg-purple-400 shrink-0"></span>
+                  <div class="truncate">
+                    <div class="font-medium text-purple-400 truncate group-hover:text-purple-300">Postman Suite</div>
+                    <div class="text-[10px] text-slate-400 font-mono">REST &amp; Newman CLI</div>
+                  </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="p-2 rounded-xl border border-slate-800 bg-slate-950/60 hover:border-emerald-500/50 transition-all flex items-center gap-2 group">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+                  <div class="truncate">
+                    <div class="font-medium text-emerald-400 truncate group-hover:text-emerald-300">JMeter Load Tests</div>
+                    <div class="text-[10px] text-slate-400 font-mono">TPS &amp; Stress Analysis</div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="metric-card">
-          <div class="metric-number">99.56%</div>
-          <div class="metric-label">Railway Audit Execution Pass Rate</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-number">24/7</div>
-          <div class="metric-label">Automated CI/CD Daily Health Schedules</div>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- About Me -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// Background & Mindset</span>
-        <h2 class="section-title">About Me</h2>
-        <p class="section-desc">
-          Analytical problem solver blending Economics rigor with full-stack software testing principles.
-        </p>
+  <!-- Technical Competencies & Toolchain (#expertise) -->
+  <section id="expertise" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-slate-950/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-2">
+            <i class="fa-solid fa-microchip text-[11px]"></i>
+            <span>Full-Spectrum QA &amp; Test Architecture</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white">
+            Technical <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Competencies</span> &amp; Toolchain
+          </h2>
+          <p class="mt-2 text-sm sm:text-base text-slate-300 max-w-2xl">
+            Modern test automation frameworks, thorough exploratory STLC techniques, API assertions, and performance profiling tools.
+          </p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative w-full md:w-80">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
+          <input type="text" id="skillSearch" placeholder="Search skills (e.g. Playwright, Postman, BVA)..." 
+                 class="w-full pl-9 pr-4 py-2 text-xs rounded-xl bg-slate-900 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500/70 transition-all font-mono" />
+        </div>
       </div>
 
-      <div class="project-card" style="max-width: 900px; margin: 0 auto; line-height: 1.8;">
-        <p style="margin-bottom: 1.25rem;">
-          I am a <b>Software Quality Assurance Engineer</b> with an academic foundation in Economics (National University of Bangladesh) and specialized training in Full Stack SQA at IT Training BD. My background in economics cultivates a sharp analytical instinct for recognizing statistical edge cases, boundary conditions, and user decision psychology that standard testing paths often overlook.
-        </p>
-        <p style="margin-bottom: 1.25rem;">
-          Whether authoring <b>IEEE 829-compliant test plans</b>, structuring card-style test cases in spreadsheets, tracking defect lifecycles in <b>Jira</b>, designing Page Object Model frameworks in <b>Python + Playwright</b>, or executing automated daily test pipelines via <b>GitHub Actions</b>, my mission is simple: eliminate production defects before they ever impact your users.
-        </p>
-        <p>
-          I also hold foundational certifications in <b>Certified Ethical Hacking (CEH)</b>, <b>Cybersecurity (Fortinet)</b>, and <b>Networking (MikroTik MTCNA)</b>, providing me with deep cross-functional awareness when investigating network bottlenecks and application vulnerabilities.
-        </p>
+      <!-- Competency Filter Buttons -->
+      <div class="flex flex-wrap gap-2 mb-8">
+        <button class="comp-filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-black shadow-md shadow-cyan-500/20 transition-all" data-filter="all">All Competencies</button>
+        <button class="comp-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="automation">Test Automation &amp; SDET</button>
+        <button class="comp-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="manual">Manual QA &amp; Test Design</button>
+        <button class="comp-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="api-perf">API &amp; Performance</button>
+        <button class="comp-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="cicd">CI/CD &amp; DevOps</button>
+        <button class="comp-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="sec">Security &amp; Networking</button>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="skillsGrid">
+
+        <!-- Card 1: Automation -->
+        <div class="skill-card p-5 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-cyan-500/40 transition-all" data-group="automation">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-slate-100">Test Automation (E2E)</h3>
+              <p class="text-[11px] text-slate-400 font-mono">Python · Playwright · Pytest</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Constructing enterprise Page Object Model (POM) architectures with reusable UI wrappers, automatic failure screenshots, and headless cross-browser matrices.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-cyan-300">Playwright</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-cyan-300">Python 3</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-cyan-300">Pytest</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Page Object Model (POM)</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">pytest-html</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Manual QA -->
+        <div class="skill-card p-5 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-indigo-500/40 transition-all" data-group="manual">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-slate-100">Manual QA &amp; Test Design</h3>
+              <p class="text-[11px] text-slate-400 font-mono">IEEE 829 · BVA · EP · Jira</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Formulating IEEE 829 test plans, Requirement Traceability Matrices (RTM), card-style test cases, and rigorous edge-case boundary testing.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-indigo-300">Boundary Value Analysis</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-indigo-300">Equivalence Partitioning</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Decision Tables</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Jira Defect Triage</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">RTM</span>
+          </div>
+        </div>
+
+        <!-- Card 3: API & Performance -->
+        <div class="skill-card p-5 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-purple-500/40 transition-all" data-group="api-perf">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-slate-100">API &amp; Performance Testing</h3>
+              <p class="text-[11px] text-slate-400 font-mono">Postman · Newman · JMeter</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Automating REST API endpoint validations, dynamic payload assertions, Newman CLI runs, and Apache JMeter concurrency/stress profiling.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-purple-300">Postman</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-purple-300">Newman CLI</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-purple-300">Apache JMeter</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">JSON Schema</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Throughput (TPS)</span>
+          </div>
+        </div>
+
+        <!-- Card 4: CI/CD & DevOps -->
+        <div class="skill-card p-5 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-blue-500/40 transition-all" data-group="cicd">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-slate-100">CI/CD &amp; DevOps</h3>
+              <p class="text-[11px] text-slate-400 font-mono">GitHub Actions · Git · Linux</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Configuring GitHub Actions cron triggers for daily automated regression suites, artifact uploading, and automated GitHub Pages test deployments.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-blue-300">GitHub Actions</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-blue-300">Git / GitHub</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Cron Schedules</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Linux CLI</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Chrome DevTools</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Security & Networking -->
+        <div class="skill-card p-5 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-emerald-500/40 transition-all" data-group="sec">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-slate-100">Security &amp; Networking</h3>
+              <p class="text-[11px] text-slate-400 font-mono">CEH · Fortinet · MikroTik MTCNA</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Certified Ethical Hacker (CEH) grounding with OWASP Top 10 web vulnerabilities awareness, network topology understanding, and Wireshark inspection.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-emerald-300">Certified Ethical Hacker</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-emerald-300">OWASP Top 10</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Fortinet Cybersecurity</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">MikroTik MTCNA</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Wireshark</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Analytical Economics -->
+        <div class="skill-card p-5 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-amber-500/40 transition-all" data-group="manual">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-slate-100">Data-Driven Testing &amp; Logic</h3>
+              <p class="text-[11px] text-slate-400 font-mono">Economics B.S.S. · Math Modeling</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Harnessing econometrics and mathematical logic to model user workflows, checkout tax algorithms, and edge-case permutations with statistical precision.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-amber-300">Econometrics</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-amber-300">Statistical Analysis</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Permutation Testing</span>
+            <span class="skill-chip px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Checkout Math Audit</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Featured Projects -->
-  <section id="projects" class="section" style="background: rgba(16, 22, 34, 0.4);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// Portfolio Showcase</span>
-        <h2 class="section-title">Featured QA Projects</h2>
-        <p class="section-desc">
-          Real-world automated frameworks, manual audits, and performance test suites.
+  <!-- Interactive Engineering Lab (#interactive-lab) -->
+  <section id="interactive-lab" class="py-16 scroll-mt-20 relative border-t border-slate-800/80 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3">
+          <i class="fa-solid fa-flask-vial text-[11px]"></i>
+          <span>Interactive Engineering Lab</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white">
+          Test Automation &amp; QA <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Simulator</span>
+        </h2>
+        <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
+          Experience Tanzim's testing methodology live. Run automated Playwright test suites, validate REST API endpoints, or simulate JMeter concurrency.
         </p>
+
+        <!-- Lab Selector Tabs -->
+        <div class="mt-6 inline-flex p-1 rounded-xl border border-slate-800 bg-slate-900/90 gap-1">
+          <button id="btnTabPlaywright" class="lab-tab-btn active flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20">
+            <i class="fa-solid fa-play text-[11px]"></i>
+            <span>Playwright Runner</span>
+          </button>
+          <button id="btnTabApi" class="lab-tab-btn flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all text-slate-400 hover:text-slate-200">
+            <i class="fa-solid fa-network-wired text-[11px]"></i>
+            <span>Postman API Validator</span>
+          </button>
+          <button id="btnTabJmeter" class="lab-tab-btn flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all text-slate-400 hover:text-slate-200">
+            <i class="fa-solid fa-gauge text-[11px]"></i>
+            <span>JMeter Load Simulator</span>
+          </button>
+        </div>
       </div>
 
-      <!-- Filter Tabs -->
-      <div class="filter-tabs">
-        <button class="filter-btn active" data-filter="all">All Work</button>
-        <button class="filter-btn" data-filter="automation">Automation</button>
-        <button class="filter-btn" data-filter="manual">Manual QA</button>
-        <button class="filter-btn" data-filter="performance">API & Performance</button>
-      </div>
-
-      <div class="projects-grid">
+      <!-- Simulator Viewport -->
+      <div class="max-w-4xl mx-auto rounded-2xl border border-slate-800 bg-slate-900/90 shadow-2xl overflow-hidden">
         
-        <!-- Project 1: SauceDemo Automation -->
-        <div class="project-card" data-category="automation">
-          <div>
-            <div class="project-badge-top">
-              <span class="category-tag">Automation Testing</span>
-              <span style="font-size: 0.8rem; color: var(--accent-emerald);">● Daily Scheduled CI</span>
-            </div>
-            <h3 class="project-title">SauceDemo Enterprise Automation Testing Framework</h3>
-            <p class="project-desc">
-              End-to-end scalable test automation suite built for the SauceDemo (Swag Labs) application utilizing Python, Playwright, and Pytest.
-            </p>
-            <ul class="project-features">
-              <li><b>Page Object Model (POM)</b> architecture with reusable component abstractions (Header, Sidebar, Footer).</li>
-              <li><b>56 comprehensive test cases</b> covering Auth, 4-way Sorting permutations, 3-step checkout math validation, and user personas.</li>
-              <li>Automated <b>GitHub Actions CI/CD pipeline</b> running every day at 10:00 AM BST (04:00 UTC).</li>
-              <li>Live <b>pytest-html</b> dashboard on GitHub Pages with automated failure screenshot capture.</li>
-            </ul>
+        <!-- Terminal Header -->
+        <div class="px-4 py-3 bg-slate-950 border-b border-slate-800 flex items-center justify-between text-xs">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+            <span class="ml-2 font-mono text-slate-400" id="terminalTitle">saucedemo-e2e-suite :: pytest v9.1.1</span>
           </div>
-          <div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Playwright</span>
-              <span class="tech-tag">Pytest</span>
-              <span class="tech-tag">GitHub Actions</span>
-              <span class="tech-tag">POM</span>
-              <span class="tech-tag">pytest-html</span>
+          <div class="font-mono text-slate-500 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>CLI Ready</span>
+          </div>
+        </div>
+
+        <!-- Tab 1: Playwright Test Runner -->
+        <div id="panelPlaywright" class="p-5 font-mono text-xs text-slate-300 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+            <div>
+              <div class="text-cyan-400 font-semibold">$ python -m pytest tests/ --browser=chromium --headless</div>
+              <div class="text-[11px] text-slate-500">Target: Swag Labs (https://www.saucedemo.com) · 56 test cases</div>
             </div>
-            <div class="project-links">
-              <a href="https://tanzimsqa.github.io/saucedemo-playwright-automation/" target="_blank" class="project-btn project-btn-primary">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live HTML Report
-              </a>
-              <a href="https://github.com/TanzimSQA/saucedemo-playwright-automation" target="_blank" class="project-btn project-btn-secondary">
-                <i class="fa-brands fa-github"></i> Repository
-              </a>
+            <button id="btnRunTests" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs transition-all flex items-center gap-1.5 self-start sm:self-auto">
+              <i class="fa-solid fa-play text-[10px]"></i>
+              <span id="btnRunTestsText">Run Test Suite</span>
+            </button>
+          </div>
+
+          <div id="testOutputLog" class="space-y-1.5 py-2 min-h-[220px]">
+            <div class="text-slate-500">// Click "Run Test Suite" to execute simulated Playwright tests...</div>
+          </div>
+
+          <!-- Progress Bar & Summary Footer -->
+          <div class="pt-3 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px]">
+            <div class="w-full sm:w-1/2 bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-800">
+              <div id="testProgressBar" class="bg-gradient-to-r from-cyan-400 to-emerald-400 h-full w-0 transition-all duration-300"></div>
+            </div>
+            <div class="text-slate-400 font-mono" id="testResultSummary">Status: Idle (Ready to execute)</div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Postman API Validator -->
+        <div id="panelApi" class="hidden p-5 font-mono text-xs text-slate-300 space-y-4">
+          <div class="flex flex-col sm:flex-row items-center gap-3">
+            <span class="px-2.5 py-1 rounded bg-emerald-950 text-emerald-400 font-bold border border-emerald-800 text-[11px]">GET</span>
+            <input type="text" readonly value="https://eticket.railway.gov.bd/api/v1/trains/search?from=Dhaka&to=Chittagong" 
+                   class="flex-1 px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono" />
+            <button id="btnSendApiRequest" class="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black font-semibold text-xs transition-all flex items-center gap-1.5">
+              <i class="fa-solid fa-paper-plane text-[10px]"></i>
+              <span>Send &amp; Assert</span>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2 flex justify-between">
+                <span>Response Assertions</span>
+                <span class="text-emerald-400">4 / 4 PASSED</span>
+              </div>
+              <div class="text-emerald-400">✓ Status code is 200 OK (38ms)</div>
+              <div class="text-emerald-400">✓ Response JSON schema validated</div>
+              <div class="text-emerald-400">✓ Available seats &gt; 0 for AC_B berth</div>
+              <div class="text-emerald-400">✓ Content-Type contains application/json</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Response JSON Preview</div>
+              <pre class="text-[11px] text-slate-400 overflow-x-auto"><code>{
+  "status": "success",
+  "route": "Dhaka - Chittagong",
+  "trains": [
+    { "name": "Suborno Express", "train_id": 702, "ac_seats": 42 },
+    { "name": "Mahanagar Provati", "train_id": 704, "ac_seats": 18 }
+  ]
+}</code></pre>
             </div>
           </div>
         </div>
 
-        <!-- Project 2: Bangladesh Railway Manual QA -->
-        <div class="project-card" data-category="manual">
-          <div>
-            <div class="project-badge-top">
-              <span class="category-tag">Manual Testing</span>
-              <span style="font-size: 0.8rem; color: var(--accent-cyan);">● National Scale Audit</span>
+        <!-- Tab 3: JMeter Load Simulator -->
+        <div id="panelJmeter" class="hidden p-5 font-mono text-xs text-slate-300 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+              <label class="text-[11px] text-slate-400 block mb-1">Virtual Users (Threads)</label>
+              <input type="range" id="sliderUsers" min="10" max="1000" value="250" class="w-full accent-cyan-400" />
+              <div class="flex justify-between text-[11px] text-cyan-300 mt-1 font-bold">
+                <span>Concurrency:</span>
+                <span id="valUsers">250 Users</span>
+              </div>
             </div>
-            <h3 class="project-title">Bangladesh Railway E-Ticketing System — QA Test Suite</h3>
-            <p class="project-desc">
-              Full quality assurance audit and manual verification of the live Bangladesh Railway e-Ticketing Portal (eticket.railway.gov.bd).
-            </p>
-            <ul class="project-features">
-              <li><b>225 Manual Test Cases</b> spanning train searches, seat selection, berth booking, and NID identity verification.</li>
-              <li><b>IEEE 829 Test Documentation</b>: formal test plan, scope, strategy, entrance/exit criteria, and mind mapping.</li>
-              <li>Defect triage & bug reporting with reproduction steps, severity/priority matrices, and screenshots.</li>
-              <li>Achieved <b>100% execution</b> with a <b>99.56% pass rate</b> and discovery of critical registration edge cases.</li>
-            </ul>
-          </div>
-          <div>
-            <div class="tech-tags">
-              <span class="tech-tag">Manual Testing</span>
-              <span class="tech-tag">IEEE 829</span>
-              <span class="tech-tag">Jira</span>
-              <span class="tech-tag">BVA / EP</span>
-              <span class="tech-tag">Test Design</span>
-              <span class="tech-tag">RTM</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application" target="_blank" class="project-btn project-btn-primary">
-                <i class="fa-brands fa-github"></i> View Audit Repo
-              </a>
-              <a href="https://eticket.railway.gov.bd" target="_blank" class="project-btn project-btn-secondary">
-                <i class="fa-solid fa-globe"></i> Live System
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Project 3: API Testing Suite -->
-        <div class="project-card" data-category="performance">
-          <div>
-            <div class="project-badge-top">
-              <span class="category-tag">API Testing</span>
-              <span style="font-size: 0.8rem; color: var(--accent-purple);">● Automated Assertions</span>
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+              <div class="text-[11px] text-slate-400 mb-1">Simulated Throughput</div>
+              <div class="text-xl font-bold text-emerald-400" id="valTps">480 req/sec</div>
+              <div class="text-[10px] text-slate-500 mt-1">Target server capacity: OK</div>
             </div>
-            <h3 class="project-title">REST API Testing & Automation with Postman</h3>
-            <p class="project-desc">
-              Structured RESTful API test suites incorporating automated assertions, environment parameters, and Newman command-line execution.
-            </p>
-            <ul class="project-features">
-              <li>Comprehensive status code, response time, header, and JSON schema assertions.</li>
-              <li>Chained requests with dynamic environment and global variables.</li>
-              <li>Negative testing: invalid headers, malformed payloads, rate limit verification.</li>
-              <li>Integrated with Newman CLI for headless automated collection runs.</li>
-            </ul>
-          </div>
-          <div>
-            <div class="tech-tags">
-              <span class="tech-tag">Postman</span>
-              <span class="tech-tag">Newman</span>
-              <span class="tech-tag">REST APIs</span>
-              <span class="tech-tag">JSON Schema</span>
-              <span class="tech-tag">JavaScript Assertions</span>
-            </div>
-            <div class="project-links">
-              <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="project-btn project-btn-primary">
-                <i class="fa-brands fa-google-drive"></i> View Postman Files
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Project 4: Load Testing Suite -->
-        <div class="project-card" data-category="performance">
-          <div>
-            <div class="project-badge-top">
-              <span class="category-tag">Performance QA</span>
-              <span style="font-size: 0.8rem; color: var(--accent-amber);">● Apache JMeter</span>
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+              <div class="text-[11px] text-slate-400 mb-1">95th Percentile Latency</div>
+              <div class="text-xl font-bold text-purple-400" id="valLatency">112 ms</div>
+              <div class="text-[10px] text-slate-500 mt-1">SLA Threshold: &lt; 250ms</div>
             </div>
-            <h3 class="project-title">Performance & Load Testing with Apache JMeter</h3>
-            <p class="project-desc">
-              System capacity, latency, and stress profiling using Apache JMeter thread groups and performance listeners.
-            </p>
-            <ul class="project-features">
-              <li>Thread group configurations simulating ramp-up, steady-state, and spike load profiles.</li>
-              <li>Throughput (TPS), 90th/95th/99th percentile response time analysis.</li>
-              <li>Identification of server saturation limits and latency bottlenecks.</li>
-              <li>Visual HTML dashboard reporting with graphs and metrics summary.</li>
-            </ul>
           </div>
-          <div>
-            <div class="tech-tags">
-              <span class="tech-tag">Apache JMeter</span>
-              <span class="tech-tag">Load Testing</span>
-              <span class="tech-tag">Stress Testing</span>
-              <span class="tech-tag">Latency Analysis</span>
-              <span class="tech-tag">TPS Metrics</span>
+
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+            <div class="text-[11px] text-slate-400 mb-1">Simulated Latency Stability Chart</div>
+            <div class="flex items-end gap-1 h-20 pt-2 border-b border-slate-800" id="jmeterBarContainer">
+              <!-- Dynamically populated bars -->
             </div>
-            <div class="project-links">
-              <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="project-btn project-btn-primary">
-                <i class="fa-brands fa-google-drive"></i> View JMeter Plans
-              </a>
+            <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+              <span>0s (Ramp-up)</span>
+              <span>30s (Sustained Peak)</span>
+              <span>60s (Cool-down)</span>
             </div>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
 
-  <!-- QA Deliverables / Drive Proofs -->
-  <section id="deliverables" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// Evidence of Work</span>
-        <h2 class="section-title">QA Deliverables & Workbooks</h2>
-        <p class="section-desc">
-          Direct cloud access to live testing artifacts, test spreadsheets, and execution proofs.
+  <!-- Featured Frameworks & Deliverables (#projects) -->
+  <section id="projects" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3">
+          <i class="fa-solid fa-cubes text-[11px]"></i>
+          <span>Production-Grade Projects</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white">
+          Featured <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Frameworks</span> &amp; Test Suites
+        </h2>
+        <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
+          Engineered end-to-end automation architectures, manual STLC audits, and CI/CD pipelines.
         </p>
       </div>
 
-      <div class="deliverables-grid">
-        <a href="https://drive.google.com/drive/folders/1n0_1rK1zHqPZjzSk22RyUpF4lextE-MZ?usp=sharing" target="_blank" class="deliverable-card">
-          <div class="deliverable-icon">📋</div>
-          <div class="deliverable-content">
-            <h4>Manual Test Case Writing</h4>
-            <p>Formatted test suites, preconditions, test data, and execution matrices.</p>
-            <span class="deliverable-link-hint">Open Drive Folder <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-        <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="deliverable-card">
-          <div class="deliverable-icon">⚡</div>
-          <div class="deliverable-content">
-            <h4>Load Testing (JMeter)</h4>
-            <p>JMeter test scripts (.jmx), thread simulations, and throughput graphs.</p>
-            <span class="deliverable-link-hint">Open Drive Folder <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
+        <!-- Project 1: SauceDemo Enterprise Playwright Automation -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-md p-6 sm:p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-950/30 transition-all group relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-600 opacity-80"></div>
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                AUTOMATION SUITE
+              </span>
+              <span class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Daily Scheduled CI
+              </span>
+            </div>
 
-        <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="deliverable-card">
-          <div class="deliverable-icon">🔌</div>
-          <div class="deliverable-content">
-            <h4>API Testing (Postman)</h4>
-            <p>Collections, environment schemas, and automated assertion files.</p>
-            <span class="deliverable-link-hint">Open Drive Folder <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
+              SauceDemo Enterprise Automation Framework
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-5">
+              Production-grade End-to-End test automation framework constructed with <b>Python</b>, <b>Playwright</b>, and <b>Pytest</b>, implementing the <b>Page Object Model (POM)</b> architecture.
+            </p>
 
-        <a href="https://drive.google.com/drive/folders/1fDVjgI1B3xm26aLncDAqZBuB9ySttcLa?usp=sharing" target="_blank" class="deliverable-card">
-          <div class="deliverable-icon">🌐</div>
-          <div class="deliverable-content">
-            <h4>Web Automation</h4>
-            <p>Playwright automation artifacts, Page Object scripts, and logs.</p>
-            <span class="deliverable-link-hint">Open Drive Folder <i class="fa-solid fa-arrow-right"></i></span>
+            <ul class="space-y-2 text-xs text-slate-300 mb-6 font-sans">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-cyan-400 mt-0.5"></i>
+                <span><b>56 Exhaustive Test Cases</b>: Authentication, 4-Way Sorting permutations, product details sync, and complete 3-step checkout with automated dynamic 8% tax calculation.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-cyan-400 mt-0.5"></i>
+                <span><b>User Personas &amp; Edge Cases</b>: Targeted verification for <code>standard_user</code>, <code>locked_out_user</code>, <code>problem_user</code>, and high-latency simulation.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-cyan-400 mt-0.5"></i>
+                <span><b>GitHub Actions CI/CD Pipeline</b>: Scheduled execution every single morning at 10:00 AM BST (04:00 UTC) with automatic full-page failure screenshots.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-cyan-400 mt-0.5"></i>
+                <span><b>Live Interactive HTML Report</b>: Automatically deployed to GitHub Pages via CI/CD.</span>
+              </li>
+            </ul>
           </div>
-        </a>
 
-        <a href="https://drive.google.com/drive/folders/1OqfqJBr21r7Mpis08ZQEjSZ3wfxoxuBz?usp=sharing" target="_blank" class="deliverable-card">
-          <div class="deliverable-icon">📱</div>
-          <div class="deliverable-content">
-            <h4>Mobile Automation</h4>
-            <p>Mobile device test scripts, responsiveness verification, and artifacts.</p>
-            <span class="deliverable-link-hint">Open Drive Folder <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
+          <div>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Python 3</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Playwright</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Pytest</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">POM</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">GitHub Actions</span>
+            </div>
 
-        <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="deliverable-card">
-          <div class="deliverable-icon">🗂️</div>
-          <div class="deliverable-content">
-            <h4>Master QA Portfolio</h4>
-            <p>Comprehensive repository holding all testing deliverables and certifications.</p>
-            <span class="deliverable-link-hint">Browse Master Drive <i class="fa-solid fa-arrow-right"></i></span>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://tanzimsqa.github.io/saucedemo-playwright-automation/" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-md shadow-cyan-500/20 transition-all">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Live HTML Test Report</span>
+              </a>
+              <a href="https://github.com/TanzimSQA/saucedemo-playwright-automation" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-slate-200 bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition-all">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
           </div>
-        </a>
+        </div>
+
+        <!-- Project 2: Bangladesh Railway Manual QA Audit -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-md p-6 sm:p-8 flex flex-col justify-between hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-950/30 transition-all group relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-purple-600 opacity-80"></div>
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                MANUAL QA AUDIT
+              </span>
+              <span class="inline-flex items-center gap-1.5 text-xs font-mono text-purple-400">
+                <i class="fa-solid fa-train"></i>
+                Live National Portal
+              </span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-indigo-300 transition-colors">
+              Bangladesh Railway E-Ticketing Manual QA Audit
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-5">
+              Comprehensive quality assurance audit and functional testing of the national <b>Bangladesh Railway e-Ticketing Portal</b> (<a href="https://eticket.railway.gov.bd" target="_blank" class="text-indigo-400 hover:underline">eticket.railway.gov.bd</a>).
+            </p>
+
+            <ul class="space-y-2 text-xs text-slate-300 mb-6 font-sans">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-indigo-400 mt-0.5"></i>
+                <span><b>225 Documented Manual Test Cases</b>: Complete coverage across train search, seat class selection, passenger registration, and National ID (NID) verification.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-indigo-400 mt-0.5"></i>
+                <span><b>IEEE 829 Standard Documentation</b>: Authored formal test plans, entry/exit criteria, testing scope, and system mind maps.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-indigo-400 mt-0.5"></i>
+                <span><b>Defect Reporting &amp; Triage</b>: Recorded high-severity registration edge cases with reproduction steps and expected vs actual matrices.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-indigo-400 mt-0.5"></i>
+                <span><b>100% Execution Completion</b>: Achieved a <b>99.56% pass rate</b> with verified test evidence and RTM mapping.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Manual QA</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">IEEE 829</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">Jira</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">BVA &amp; EP</span>
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 border border-slate-800 text-slate-300">RTM</span>
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <a href="https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 shadow-md shadow-indigo-500/20 transition-all">
+                <i class="fa-brands fa-github"></i>
+                <span>View Railway Audit Repo</span>
+              </a>
+              <a href="https://eticket.railway.gov.bd" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-slate-200 bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition-all">
+                <i class="fa-solid fa-globe text-cyan-400"></i>
+                <span>Target System</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- Skills Matrix -->
-  <section id="skills" class="section" style="background: rgba(16, 22, 34, 0.4);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// Technical Arsenal</span>
-        <h2 class="section-title">Skills & Capabilities</h2>
-        <p class="section-desc">
-          Tools, frameworks, and testing methodologies I apply daily.
+  <!-- Live QA Deliverables & Drive Hub (#deliverables) -->
+  <section id="deliverables" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-emerald-400 bg-emerald-950/40 border border-emerald-800/60 mb-3">
+          <i class="fa-brands fa-google-drive text-[11px]"></i>
+          <span>Direct Work Deliverables</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white">
+          Verified <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">QA Deliverables</span> &amp; Workbooks
+        </h2>
+        <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
+          Direct Google Drive cloud access to raw test execution spreadsheets, JMeter performance graphs, and Postman API collections.
         </p>
       </div>
 
-      <div class="skills-container">
+      <!-- Deliverables Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <a href="https://drive.google.com/drive/folders/1n0_1rK1zHqPZjzSk22RyUpF4lextE-MZ?usp=sharing" target="_blank" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-cyan-500/50 hover:bg-slate-900 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+          <h4 class="font-bold text-sm text-slate-100 group-hover:text-cyan-300 mb-1">Manual Test Case Writing</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">Formatted card-style test cases, preconditions, test data, and execution matrices.</p>
+          <span class="text-[11px] font-mono text-cyan-400 flex items-center gap-1">Open Drive Folder <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-amber-500/50 hover:bg-slate-900 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-3 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h4 class="font-bold text-sm text-slate-100 group-hover:text-amber-300 mb-1">Load Testing with JMeter</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">Apache JMeter scripts (.jmx), thread simulations, throughput metrics, and latency graphs.</p>
+          <span class="text-[11px] font-mono text-amber-400 flex items-center gap-1">Open Drive Folder <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-purple-500/50 hover:bg-slate-900 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-3 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <h4 class="font-bold text-sm text-slate-100 group-hover:text-purple-300 mb-1">API Testing (Postman)</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">Postman Collections, environment variables, test scripts, and Newman runner setups.</p>
+          <span class="text-[11px] font-mono text-purple-400 flex items-center gap-1">Open Drive Folder <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1fDVjgI1B3xm26aLncDAqZBuB9ySttcLa?usp=sharing" target="_blank" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-blue-500/50 hover:bg-slate-900 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-3 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h4 class="font-bold text-sm text-slate-100 group-hover:text-blue-300 mb-1">Web Automation Testing</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">Automated Playwright scripts, Page Object Model components, and test logs.</p>
+          <span class="text-[11px] font-mono text-blue-400 flex items-center gap-1">Open Drive Folder <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1OqfqJBr21r7Mpis08ZQEjSZ3wfxoxuBz?usp=sharing" target="_blank" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-pink-500/50 hover:bg-slate-900 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 mb-3 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h4 class="font-bold text-sm text-slate-100 group-hover:text-pink-300 mb-1">Mobile Automation Testing</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">Mobile app testing artifacts, device flows, responsiveness, and UI validation.</p>
+          <span class="text-[11px] font-mono text-pink-400 flex items-center gap-1">Open Drive Folder <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="p-5 rounded-2xl border border-emerald-500/30 bg-emerald-950/20 hover:border-emerald-500/70 hover:bg-emerald-950/30 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-3 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-folder-tree"></i>
+          </div>
+          <h4 class="font-bold text-sm text-emerald-300 group-hover:text-emerald-200 mb-1">Master QA Portfolio Hub</h4>
+          <p class="text-xs text-slate-300 leading-relaxed mb-3">Central root directory containing all testing projects, workbooks, and certifications.</p>
+          <span class="text-[11px] font-mono text-emerald-400 flex items-center gap-1 font-bold">Browse Master Drive <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications & Credentials (#credentials) -->
+  <section id="credentials" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-slate-950/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-purple-400 bg-purple-950/40 border border-purple-800/60 mb-3">
+          <i class="fa-solid fa-award text-[11px]"></i>
+          <span>Industry Credentials</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white">
+          Certifications &amp; <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent">Professional Badges</span>
+        </h2>
+        <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
+          Recognized industry certifications across software testing, cybersecurity, and networking.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono text-cyan-400 font-semibold">IT TRAINING BD</div>
+            <h4 class="font-bold text-sm text-slate-100 mt-0.5">Full Stack SQA (Professional Track)</h4>
+            <p class="text-xs text-slate-400 mt-1">Stating August 2026 – Present</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono text-blue-400 font-semibold">SIMPLILEARN SKILLUP</div>
+            <h4 class="font-bold text-sm text-slate-100 mt-0.5">Introduction to Software Testing</h4>
+            <p class="text-xs text-slate-400 mt-1">Verified Completion Certificate</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono text-blue-400 font-semibold">SIMPLILEARN SKILLUP</div>
+            <h4 class="font-bold text-sm text-slate-100 mt-0.5">Automation Testing Basics</h4>
+            <p class="text-xs text-slate-400 mt-1">Verified Completion Certificate</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 shrink-0">
+            <i class="fa-solid fa-user-secret"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono text-rose-400 font-semibold">TEAM MATRIX - ELITE HACKERS</div>
+            <h4 class="font-bold text-sm text-slate-100 mt-0.5">Certified Ethical Hacker (CEH)</h4>
+            <p class="text-xs text-slate-400 mt-1">Verified Credential</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono text-purple-400 font-semibold">FORTINET</div>
+            <h4 class="font-bold text-sm text-slate-100 mt-0.5">Cybersecurity Fundamentals</h4>
+            <p class="text-xs text-slate-400 mt-1">Intro to Threat Landscape 3.0</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono text-emerald-400 font-semibold">MIKROTIK</div>
+            <h4 class="font-bold text-sm text-slate-100 mt-0.5">MikroTik Certified Network Associate</h4>
+            <p class="text-xs text-slate-400 mt-1">MTCNA Credential</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience & Education (#experience) -->
+  <section id="experience" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
-        <div class="skill-category-card">
-          <h3><i class="fa-solid fa-robot text-cyan"></i> Automation & Coding</h3>
-          <div class="skill-badges">
-            <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
-            <span class="skill-pill"><i class="fa-solid fa-mask"></i> Playwright</span>
-            <span class="skill-pill"><i class="fa-solid fa-vial"></i> Pytest</span>
-            <span class="skill-pill">Page Object Model (POM)</span>
-            <span class="skill-pill">pytest-html</span>
-            <span class="skill-pill">Cross-Browser Testing</span>
+        <!-- Left: Academic Background -->
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3">
+            <i class="fa-solid fa-graduation-cap text-[11px]"></i>
+            <span>Education</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">
+            Academic Background
+          </h2>
+
+          <div class="space-y-6 relative border-l-2 border-slate-800 pl-6 ml-3">
+            
+            <div class="relative">
+              <span class="w-3 h-3 rounded-full bg-cyan-400 absolute -left-[31px] top-1.5 shadow-md shadow-cyan-400/50"></span>
+              <span class="text-xs font-mono text-cyan-400">2024 GRADUATE</span>
+              <h4 class="text-base font-bold text-white mt-0.5">Bachelor of Social Sciences (B.S.S.) in Economics</h4>
+              <p class="text-xs text-slate-400 mt-1">National University of Bangladesh &bull; CGPA: 2.92 / 4.00</p>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                Focused on statistical analysis, economic theory, quantitative models, and deductive decision structures that form the backbone of modern edge-case QA testing.
+              </p>
+            </div>
+
+            <div class="relative">
+              <span class="w-3 h-3 rounded-full bg-slate-700 absolute -left-[31px] top-1.5"></span>
+              <span class="text-xs font-mono text-slate-500">2017</span>
+              <h4 class="text-base font-bold text-white mt-0.5">Higher Secondary Certificate (HSC) — Science</h4>
+              <p class="text-xs text-slate-400 mt-1">GPA: 3.92 / 5.00</p>
+            </div>
+
+            <div class="relative">
+              <span class="w-3 h-3 rounded-full bg-slate-700 absolute -left-[31px] top-1.5"></span>
+              <span class="text-xs font-mono text-slate-500">2015</span>
+              <h4 class="text-base font-bold text-white mt-0.5">Secondary School Certificate (SSC) — Science</h4>
+              <p class="text-xs text-slate-400 mt-1">GPA: 4.71 / 5.00</p>
+            </div>
+
           </div>
         </div>
 
-        <div class="skill-category-card">
-          <h3><i class="fa-solid fa-clipboard-check text-cyan"></i> Testing & QA Disciplines</h3>
-          <div class="skill-badges">
-            <span class="skill-pill">Manual Testing</span>
-            <span class="skill-pill">Functional Testing</span>
-            <span class="skill-pill">Regression Testing</span>
-            <span class="skill-pill">Smoke & Sanity</span>
-            <span class="skill-pill">UAT</span>
-            <span class="skill-pill">Boundary Value Analysis (BVA)</span>
-            <span class="skill-pill">Equivalence Partitioning</span>
-            <span class="skill-pill">Decision Tables</span>
+        <!-- Right: Professional Reference & Training -->
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-purple-400 bg-purple-950/40 border border-purple-800/60 mb-3">
+            <i class="fa-solid fa-user-check text-[11px]"></i>
+            <span>Professional Endorsement</span>
           </div>
-        </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">
+            Industry Reference &amp; Mentorship
+          </h2>
 
-        <div class="skill-category-card">
-          <h3><i class="fa-solid fa-bolt text-cyan"></i> API & Performance</h3>
-          <div class="skill-badges">
-            <span class="skill-pill">Postman</span>
-            <span class="skill-pill">Newman</span>
-            <span class="skill-pill">Apache JMeter</span>
-            <span class="skill-pill">REST API Testing</span>
-            <span class="skill-pill">JSON Validation</span>
-            <span class="skill-pill">Load & Stress Testing</span>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <h3><i class="fa-solid fa-bug text-cyan"></i> Defect Tracking & Docs</h3>
-          <div class="skill-badges">
-            <span class="skill-pill"><i class="fa-brands fa-jira"></i> Jira</span>
-            <span class="skill-pill">IEEE 829 Test Plans</span>
-            <span class="skill-pill">Traceability Matrix (RTM)</span>
-            <span class="skill-pill">Google Sheets</span>
-            <span class="skill-pill">Microsoft Excel</span>
-            <span class="skill-pill">Defect Triage</span>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <h3><i class="fa-solid fa-code-branch text-cyan"></i> CI/CD, DevOps & Tools</h3>
-          <div class="skill-badges">
-            <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
-            <span class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</span>
-            <span class="skill-pill">GitHub Actions CI/CD</span>
-            <span class="skill-pill"><i class="fa-brands fa-chrome"></i> Chrome DevTools</span>
-            <span class="skill-pill"><i class="fa-brands fa-linux"></i> Linux</span>
-            <span class="skill-pill">VS Code</span>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <h3><i class="fa-solid fa-user-shield text-cyan"></i> Security & Networking</h3>
-          <div class="skill-badges">
-            <span class="skill-pill">Certified Ethical Hacker (CEH)</span>
-            <span class="skill-pill">OWASP Top 10</span>
-            <span class="skill-pill">Fortinet Security Fundamentals</span>
-            <span class="skill-pill">MikroTik MTCNA</span>
-            <span class="skill-pill">Burp Suite</span>
-            <span class="skill-pill">Wireshark</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications & Education -->
-  <section id="certifications" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// Credentials & Learning</span>
-        <h2 class="section-title">Certifications & Education</h2>
-        <p class="section-desc">
-          Continuous professional growth and verified qualifications.
-        </p>
-      </div>
-
-      <div class="timeline-grid">
-        
-        <div class="timeline-column">
-          <h3><i class="fa-solid fa-certificate text-cyan"></i> Verified Certifications</h3>
-          
-          <div class="timeline-item">
-            <div class="timeline-date">2026</div>
-            <div class="timeline-title">Full Stack SQA (Professional Track)</div>
-            <div class="timeline-issuer">IT Training BD (August 2026 – Present)</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">SIMPLILEARN</div>
-            <div class="timeline-title">Introduction to Software Testing</div>
-            <div class="timeline-issuer">SimpliLearn SkillUp</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">SIMPLILEARN</div>
-            <div class="timeline-title">Automation Testing Basics</div>
-            <div class="timeline-issuer">SimpliLearn SkillUp</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">TEAM MATRIX</div>
-            <div class="timeline-title">Certified Ethical Hacker (CEH)</div>
-            <div class="timeline-issuer">Team Matrix - Elite Hackers</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">FORTINET</div>
-            <div class="timeline-title">Fundamentals in Cybersecurity & Threat Landscape 3.0</div>
-            <div class="timeline-issuer">Fortinet</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">MIKROTIK</div>
-            <div class="timeline-title">MikroTik Certified Network Associate (MTCNA)</div>
-            <div class="timeline-issuer">MikroTik</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">POSTMAN</div>
-            <div class="timeline-title">API Testing Learning Path (V12)</div>
-            <div class="timeline-issuer">Postman Academy</div>
-          </div>
-        </div>
-
-        <div class="timeline-column">
-          <h3><i class="fa-solid fa-graduation-cap text-cyan"></i> Academic Background</h3>
-          
-          <div class="timeline-item">
-            <div class="timeline-date">2024 GRADUATE</div>
-            <div class="timeline-title">Bachelor of Social Sciences (B.S.S.) in Economics</div>
-            <div class="timeline-issuer">National University of Bangladesh &bull; CGPA: 2.92 / 4.00</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2017</div>
-            <div class="timeline-title">Higher Secondary Certificate (HSC) — Science</div>
-            <div class="timeline-issuer">GPA: 3.92 / 5.00</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2015</div>
-            <div class="timeline-title">Secondary School Certificate (SSC) — Science</div>
-            <div class="timeline-issuer">GPA: 4.71 / 5.00</div>
-          </div>
-
-          <h3 style="margin-top: 2.5rem;"><i class="fa-solid fa-user-check text-cyan"></i> Professional Reference</h3>
-          
-          <div class="project-card" style="padding: 1.25rem;">
-            <div style="font-weight: 700; font-size: 1.05rem;">SABIUL ISLAM RASHED</div>
-            <div style="color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">SQA Head, Burnsys — Dubai, UAE</div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">
-              <i class="fa-solid fa-envelope"></i> 234sabiul@gmail.com
+          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 relative overflow-hidden mb-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-xl font-bold font-mono">
+                SR
+              </div>
+              <div>
+                <h4 class="text-base font-bold text-white">SABIUL ISLAM RASHED</h4>
+                <div class="text-xs font-mono text-purple-400 mt-0.5">SQA HEAD, Burnsys — Dubai, UAE</div>
+                <div class="text-xs text-slate-400 mt-2 flex items-center gap-2">
+                  <i class="fa-solid fa-envelope text-slate-500"></i>
+                  <a href="mailto:234sabiul@gmail.com" class="hover:text-purple-300">234sabiul@gmail.com</a>
+                </div>
+                <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                  "Tanzim demonstrates exemplary commitment to disciplined QA methodology, defect hunting precision, and test case documentation integrity."
+                </p>
+              </div>
             </div>
           </div>
+
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/40">
+            <h5 class="text-xs font-mono text-cyan-400 uppercase tracking-wider mb-2 font-bold">Continuous Training Organization</h5>
+            <div class="text-sm font-bold text-white">IT Training BD</div>
+            <div class="text-xs text-slate-400 mt-0.5">United States-based technical training organization</div>
+            <a href="https://www.facebook.com/ittbdofficial" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:underline mt-2">
+              <i class="fa-brands fa-facebook"></i> facebook.com/ittbdofficial
+            </a>
+          </div>
+
         </div>
 
       </div>
+
     </div>
   </section>
 
-  <!-- Contact / Hire Me Section -->
-  <footer id="contact" class="footer-cta">
-    <div class="container">
-      <span class="section-tag">// Let's Collaborate</span>
-      <h2 class="section-title">Ready to Elevate Your Software Quality?</h2>
-      <p class="section-desc" style="max-width: 600px; margin: 0 auto;">
-        I am actively seeking SQA Engineer opportunities where I can contribute enterprise test automation, rigorous exploratory testing, and reliable CI/CD pipelines.
+  <!-- Contact & Collaboration (#contact) -->
+  <footer id="contact" class="py-20 relative border-t border-slate-800/80 bg-slate-950 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-4">
+        <i class="fa-solid fa-handshake text-[11px]"></i>
+        <span>Let's Deliver Quality Together</span>
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+        Ready to Architect <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Zero-Defect</span> Releases?
+      </h2>
+      <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed mb-8">
+        I am available for full-time Junior/Mid SQA Engineer roles, QA automation engineering, and contract testing audits.
       </p>
 
-      <div class="footer-buttons">
-        <a href="mailto:tanzimsqa@gmail.com" class="btn btn-primary">
-          <i class="fa-solid fa-envelope"></i> Send Email
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <a href="mailto:tanzimsqa@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-lg shadow-cyan-500/25 transition-all">
+          <i class="fa-solid fa-envelope"></i>
+          <span>tanzimsqa@gmail.com</span>
         </a>
-        <a href="https://wa.me/8801992321575" target="_blank" class="btn btn-secondary">
-          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        <a href="https://wa.me/8801992321575" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-950/60 border border-emerald-700/60 hover:bg-emerald-900/60 transition-all">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>+880 1992-321575</span>
         </a>
-        <a href="https://www.linkedin.com/in/tanzimbpl/" target="_blank" class="btn btn-secondary">
-          <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+        <a href="https://www.linkedin.com/in/tanzimbpl/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-blue-300 bg-blue-950/60 border border-blue-700/60 hover:bg-blue-900/60 transition-all">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn Connect</span>
         </a>
       </div>
 
-      <p class="footer-copy">
-        &copy; 2026 Tanzim Rahman. Crafted for high-reliability software testing.
-      </p>
+      <!-- Quick Message Form -->
+      <div class="max-w-lg mx-auto p-6 rounded-2xl border border-slate-800 bg-slate-900/70 text-left mb-12">
+        <h4 class="text-sm font-bold text-white mb-1">Quick Inquiries</h4>
+        <p class="text-xs text-slate-400 mb-4">Send a direct message or role invitation to Tanzim.</p>
+        
+        <form id="contactForm" class="space-y-3">
+          <div>
+            <label class="text-[11px] font-mono text-slate-400 block mb-1">Your Name or Organization</label>
+            <input type="text" id="senderName" required placeholder="e.g. Sarah / Tech Lead" 
+                   class="w-full px-3 py-2 text-xs rounded-lg bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 font-sans" />
+          </div>
+          <div>
+            <label class="text-[11px] font-mono text-slate-400 block mb-1">Your Email</label>
+            <input type="email" id="senderEmail" required placeholder="e.g. sarah@company.com" 
+                   class="w-full px-3 py-2 text-xs rounded-lg bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 font-sans" />
+          </div>
+          <div>
+            <label class="text-[11px] font-mono text-slate-400 block mb-1">Message</label>
+            <textarea id="senderMsg" rows="3" required placeholder="Describe role, project, or testing requirements..." 
+                      class="w-full px-3 py-2 text-xs rounded-lg bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 font-sans"></textarea>
+          </div>
+          <button type="submit" class="w-full py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black font-semibold text-xs transition-all flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane text-[11px]"></i>
+            <span>Send Message Directly</span>
+          </button>
+          <div id="contactFeedback" class="hidden text-center text-xs text-emerald-400 font-mono pt-2"></div>
+        </form>
+      </div>
+
+      <div class="border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2026 Tanzim Rahman. Engineered for high-confidence software quality.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/TanzimSQA" target="_blank" class="hover:text-slate-300 transition-colors">GitHub</a>
+          <a href="https://www.linkedin.com/in/tanzimbpl/" target="_blank" class="hover:text-slate-300 transition-colors">LinkedIn</a>
+          <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="hover:text-slate-300 transition-colors">Google Drive</a>
+        </div>
+      </div>
+
     </div>
   </footer>
 
