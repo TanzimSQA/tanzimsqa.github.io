@@ -58,19 +58,19 @@
 <body class="bg-[#030712] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black min-h-screen relative overflow-x-hidden">
 
   <!-- Ambient Background Grids & Radiant Lighting Orbs -->
-  <div class="fixed inset-0 bg-grid-blueprint bg-radial-vignette pointer-events-none -z-20 opacity-70"></div>
-  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[34rem] h-[34rem] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
-  <div class="fixed top-36 right-10 w-[30rem] h-[30rem] bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
-  <div class="fixed bottom-10 left-1/3 w-[30rem] h-[30rem] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+  <div class="fixed inset-0 bg-grid-blueprint bg-radial-vignette pointer-events-none -z-20 opacity-75"></div>
+  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[38rem] h-[38rem] bg-cyan-500/15 rounded-full blur-[140px] pointer-events-none -z-10 animate-orb-1"></div>
+  <div class="fixed top-48 right-10 w-[34rem] h-[34rem] bg-indigo-600/15 rounded-full blur-[160px] pointer-events-none -z-10 animate-orb-2"></div>
+  <div class="fixed bottom-10 left-1/3 w-[34rem] h-[34rem] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none -z-10 animate-orb-1"></div>
 
   <!-- Sticky Glassmorphism Header -->
-  <header class="sticky top-0 z-50 transition-all duration-300 bg-[#030712]/80 backdrop-blur-xl border-b border-slate-800/80 shadow-lg shadow-black/20">
+  <header class="sticky top-0 z-50 transition-all duration-300 bg-[#030712]/85 backdrop-blur-2xl border-b border-slate-800/80 shadow-lg shadow-black/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
         <!-- Brand Logo -->
         <a href="#" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 p-[1.5px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500 p-[1.5px] shadow-lg shadow-cyan-500/25 group-hover:shadow-cyan-400/50 transition-all">
             <div class="w-full h-full bg-[#030712] rounded-[10px] flex items-center justify-center">
               <i class="fa-solid fa-shield-halved text-cyan-400 text-sm group-hover:scale-110 transition-transform"></i>
             </div>
@@ -98,17 +98,17 @@
 
         <!-- Right Quick Actions -->
         <div class="flex items-center gap-2.5 sm:gap-3">
-          <button class="copy-email-btn hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-700/80 bg-slate-900/60 hover:bg-slate-800 text-xs font-mono text-slate-300 hover:text-cyan-300 hover:border-cyan-500/40 transition-all" title="Copy email address">
+          <button class="copy-email-btn btn-shimmer hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-700/80 bg-slate-900/70 hover:bg-slate-800 text-xs font-mono text-slate-300 hover:text-cyan-300 hover:border-cyan-500/50 transition-all shadow-sm" title="Copy email address">
             <i class="fa-regular fa-copy text-cyan-400"></i>
             <span>tanzimsqa@gmail.com</span>
           </button>
 
-          <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-emerald-500/30 bg-emerald-950/30 hover:bg-emerald-900/40 hover:border-emerald-500/60 text-xs font-semibold text-emerald-300 transition-all shadow-sm">
+          <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="btn-shimmer hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-emerald-500/40 bg-emerald-950/40 hover:bg-emerald-900/50 hover:border-emerald-400/70 text-xs font-semibold text-emerald-300 transition-all shadow-sm">
             <i class="fa-brands fa-google-drive text-emerald-400"></i>
             <span>Resume &amp; Drive</span>
           </a>
 
-          <a href="#contact" class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all">
+          <a href="#contact" class="btn-shimmer inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-md shadow-cyan-500/30 hover:shadow-cyan-400/50 transition-all">
             <i class="fa-solid fa-paper-plane text-[11px]"></i>
             <span>Hire Me</span>
           </a>
@@ -163,8 +163,8 @@
           <!-- Background Aura Glow -->
           <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-cyan-500/25 via-indigo-600/20 to-purple-500/25 opacity-70 blur-3xl pointer-events-none"></div>
 
-          <!-- Glass Elevated Profile Card -->
-          <div class="relative w-full max-w-sm sm:max-w-md rounded-3xl p-6 sm:p-7 border border-white/10 bg-slate-900/80 shadow-2xl shadow-black/80 backdrop-blur-2xl">
+          <!-- Glass Elevated Profile Card with Spotlight -->
+          <div class="spotlight-card relative w-full max-w-sm sm:max-w-md rounded-3xl p-6 sm:p-7 border border-white/10 shadow-2xl shadow-black/80 backdrop-blur-2xl">
 
             <!-- Profile Photo Frame with Conic Gradient Ring -->
             <div class="relative w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full p-[3px] bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500 shadow-2xl shadow-cyan-950/70 mb-6 group ring-4 ring-cyan-500/20">
@@ -173,8 +173,20 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-60 pointer-events-none"></div>
               </div>
               
-              <!-- Floating Handle Badge -->
-              <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#030712]/95 border border-cyan-500/40 text-cyan-300 font-mono text-[11px] shadow-xl backdrop-blur-md whitespace-nowrap">
+              <!-- Floating Micro-Badge Top Right -->
+              <div class="float-badge-1 absolute -top-2.5 -right-2 px-3 py-1 rounded-full bg-slate-900/95 border border-cyan-500/50 text-[11px] font-mono text-cyan-300 shadow-xl backdrop-blur-md flex items-center gap-1.5 z-10">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-[11px]"></i>
+                <span class="font-semibold">100% Passing</span>
+              </div>
+
+              <!-- Floating Micro-Badge Bottom Left -->
+              <div class="float-badge-2 absolute -bottom-2 -left-2 px-3 py-1 rounded-full bg-slate-900/95 border border-purple-500/50 text-[11px] font-mono text-purple-300 shadow-xl backdrop-blur-md flex items-center gap-1.5 z-10">
+                <i class="fa-solid fa-bolt text-amber-400 text-[11px]"></i>
+                <span class="font-semibold">Zero Flakes</span>
+              </div>
+
+              <!-- Floating Handle Badge Center Bottom -->
+              <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#030712]/95 border border-cyan-500/40 text-cyan-300 font-mono text-[11px] shadow-xl backdrop-blur-md whitespace-nowrap z-10">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span class="font-semibold">@TanzimSQA</span>
                 <span class="text-slate-500">|</span>
@@ -184,22 +196,28 @@
 
             <!-- Key Impact Metrics (Two Stat Cards) -->
             <div class="grid grid-cols-2 gap-3 mb-4">
-              <div class="p-3.5 rounded-2xl border border-slate-800/80 bg-slate-950/70 hover:border-cyan-500/40 transition-colors">
+              <div class="p-3.5 rounded-2xl border border-slate-800/80 bg-slate-950/70 hover:border-cyan-500/50 transition-all group">
                 <div class="flex items-center gap-1.5 text-xs text-cyan-400 font-mono mb-1">
-                  <i class="fa-solid fa-bolt text-[11px]"></i>
+                  <i class="fa-solid fa-bolt text-[11px] group-hover:scale-110 transition-transform"></i>
                   <span class="font-semibold">Test Flakiness</span>
                 </div>
-                <div class="text-2xl font-extrabold font-mono tracking-tight text-white">&lt; 0.05%</div>
-                <div class="text-[11px] text-slate-400 mt-0.5">Self-healing POM locators</div>
+                <div class="text-2xl font-extrabold font-mono tracking-tight text-white text-glow-cyan">&lt; 0.05%</div>
+                <div class="w-full bg-slate-800/80 rounded-full h-1 mt-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-teal-400 h-full w-[99%]"></div>
+                </div>
+                <div class="text-[10px] text-slate-400 mt-1">Self-healing POM locators</div>
               </div>
 
-              <div class="p-3.5 rounded-2xl border border-slate-800/80 bg-slate-950/70 hover:border-purple-500/40 transition-colors">
+              <div class="p-3.5 rounded-2xl border border-slate-800/80 bg-slate-950/70 hover:border-purple-500/50 transition-all group">
                 <div class="flex items-center gap-1.5 text-xs text-purple-400 font-mono mb-1">
-                  <i class="fa-solid fa-shield-check text-[11px]"></i>
+                  <i class="fa-solid fa-shield-check text-[11px] group-hover:scale-110 transition-transform"></i>
                   <span class="font-semibold">Audit Pass Rate</span>
                 </div>
-                <div class="text-2xl font-extrabold font-mono tracking-tight text-white">99.56%</div>
-                <div class="text-[11px] text-slate-400 mt-0.5">225 live railway test cases</div>
+                <div class="text-2xl font-extrabold font-mono tracking-tight text-white text-glow-purple">99.56%</div>
+                <div class="w-full bg-slate-800/80 rounded-full h-1 mt-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-purple-400 to-pink-400 h-full w-[99.5%]"></div>
+                </div>
+                <div class="text-[10px] text-slate-400 mt-1">225 live railway test cases</div>
               </div>
             </div>
 
@@ -207,11 +225,11 @@
             <div class="space-y-2">
               <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider px-1 font-semibold flex items-center justify-between">
                 <span>Featured Deliverables</span>
-                <span class="text-cyan-400">Direct Access</span>
+                <span class="text-cyan-400 flex items-center gap-1">Direct Access <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
               </div>
               
               <div class="grid grid-cols-2 gap-2 text-xs">
-                <a href="https://github.com/TanzimSQA/saucedemo-playwright-automation" target="_blank" class="p-2.5 rounded-xl border border-slate-800 bg-slate-950/70 hover:border-cyan-500/60 hover:bg-slate-900 transition-all flex items-center gap-2 group">
+                <a href="https://github.com/TanzimSQA/saucedemo-playwright-automation" target="_blank" class="p-2.5 rounded-xl border border-slate-800/90 bg-slate-950/70 hover:border-cyan-500/60 hover:bg-slate-900/90 hover:shadow-lg hover:shadow-cyan-950/30 transition-all flex items-center gap-2 group">
                   <span class="w-2 h-2 rounded-full bg-cyan-400 shrink-0 group-hover:scale-125 transition-transform"></span>
                   <div class="truncate">
                     <div class="font-semibold text-cyan-400 truncate group-hover:text-cyan-300">SauceDemo POM</div>
@@ -219,7 +237,7 @@
                   </div>
                 </a>
 
-                <a href="https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application" target="_blank" class="p-2.5 rounded-xl border border-slate-800 bg-slate-950/70 hover:border-indigo-500/60 hover:bg-slate-900 transition-all flex items-center gap-2 group">
+                <a href="https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application" target="_blank" class="p-2.5 rounded-xl border border-slate-800/90 bg-slate-950/70 hover:border-indigo-500/60 hover:bg-slate-900/90 hover:shadow-lg hover:shadow-indigo-950/30 transition-all flex items-center gap-2 group">
                   <span class="w-2 h-2 rounded-full bg-indigo-400 shrink-0 group-hover:scale-125 transition-transform"></span>
                   <div class="truncate">
                     <div class="font-semibold text-indigo-400 truncate group-hover:text-indigo-300">Railway Audit</div>
@@ -227,7 +245,7 @@
                   </div>
                 </a>
 
-                <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="p-2.5 rounded-xl border border-slate-800 bg-slate-950/70 hover:border-purple-500/60 hover:bg-slate-900 transition-all flex items-center gap-2 group">
+                <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="p-2.5 rounded-xl border border-slate-800/90 bg-slate-950/70 hover:border-purple-500/60 hover:bg-slate-900/90 hover:shadow-lg hover:shadow-purple-950/30 transition-all flex items-center gap-2 group">
                   <span class="w-2 h-2 rounded-full bg-purple-400 shrink-0 group-hover:scale-125 transition-transform"></span>
                   <div class="truncate">
                     <div class="font-semibold text-purple-400 truncate group-hover:text-purple-300">Postman Suite</div>
@@ -235,7 +253,7 @@
                   </div>
                 </a>
 
-                <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="p-2.5 rounded-xl border border-slate-800 bg-slate-950/70 hover:border-emerald-500/60 hover:bg-slate-900 transition-all flex items-center gap-2 group">
+                <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="p-2.5 rounded-xl border border-slate-800/90 bg-slate-950/70 hover:border-emerald-500/60 hover:bg-slate-900/90 hover:shadow-lg hover:shadow-emerald-950/30 transition-all flex items-center gap-2 group">
                   <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0 group-hover:scale-125 transition-transform"></span>
                   <div class="truncate">
                     <div class="font-semibold text-emerald-400 truncate group-hover:text-emerald-300">JMeter Tests</div>
@@ -252,7 +270,7 @@
         <div class="lg:col-span-7 space-y-6 order-2 lg:order-2">
 
           <!-- Current Role & Availability Badge -->
-          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full text-xs font-medium border border-emerald-500/40 bg-emerald-950/40 backdrop-blur-md shadow-lg shadow-emerald-950/30">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-medium border border-emerald-500/40 bg-emerald-950/40 backdrop-blur-md shadow-lg shadow-emerald-950/40">
             <span class="relative flex h-2.5 w-2.5">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
@@ -269,8 +287,8 @@
               <span id="typewriterText" class="text-white font-bold">Full Stack SQA Engineer</span><span class="typewriter-cursor"></span>
             </div>
 
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
-              Engineering <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Resilient Test Pipelines</span> &amp; <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent">High-Confidence</span> Releases.
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12]">
+              Engineering <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent text-glow-cyan">Resilient Test Pipelines</span> &amp; <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent text-glow-purple">High-Confidence</span> Releases
             </h1>
           </div>
 
@@ -298,17 +316,17 @@
 
           <!-- Action Buttons Group -->
           <div class="flex flex-wrap gap-3.5 pt-2">
-            <a href="#interactive-lab" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+            <a href="#interactive-lab" class="btn-shimmer inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-xl shadow-cyan-500/30 hover:shadow-cyan-400/50 hover:-translate-y-0.5 transition-all">
               <i class="fa-solid fa-play text-xs text-cyan-200"></i>
               <span>Launch Live Test Lab</span>
             </a>
             
-            <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-500/50 hover:-translate-y-0.5 transition-all shadow-md">
+            <a href="#projects" class="btn-shimmer inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-500/60 hover:-translate-y-0.5 transition-all shadow-md">
               <i class="fa-solid fa-code text-cyan-400"></i>
               <span>Explore Frameworks</span>
             </a>
 
-            <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-950/30 hover:bg-emerald-900/40 border border-emerald-700/50 hover:border-emerald-500/60 hover:-translate-y-0.5 transition-all shadow-md">
+            <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="btn-shimmer inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-700/50 hover:border-emerald-400/70 hover:-translate-y-0.5 transition-all shadow-md">
               <i class="fa-brands fa-google-drive text-emerald-400"></i>
               <span>Google Drive Portfolio</span>
             </a>
@@ -371,17 +389,17 @@
   </section>
 
   <!-- Interactive Engineering Lab (#interactive-lab) -->
-  <section id="interactive-lab" class="py-16 scroll-mt-20 relative border-t border-slate-800/80 bg-[#020617]/70">
+  <section id="interactive-lab" class="reveal-init py-16 scroll-mt-20 relative border-t border-slate-800/80 bg-[#020617]/70">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
           <i class="fa-solid fa-flask-vial text-[11px]"></i>
           <span>Live Interactive Engineering Workbench</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-          Experience Tanzim's QA Work <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Live in Action</span>
+          Experience Tanzim's QA Work <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent text-glow-cyan">Live in Action</span>
         </h2>
         <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
           Run automated Playwright browser tests, assert live REST API responses, profile JMeter virtual user concurrency, or inspect high-fidelity Jira bug tickets.
@@ -408,15 +426,15 @@
         </div>
       </div>
 
-      <!-- Simulator Cyber Window -->
-      <div class="max-w-4xl mx-auto rounded-3xl border border-slate-800 bg-slate-950/90 shadow-2xl shadow-black/90 overflow-hidden backdrop-blur-xl">
+      <!-- Simulator Cyber Window with Spotlight & Ambient Glow -->
+      <div class="spotlight-card max-w-4xl mx-auto rounded-3xl border border-slate-800 bg-slate-950/90 shadow-2xl shadow-cyan-950/30 overflow-hidden backdrop-blur-2xl">
         
         <!-- Window Top Bar (macOS / Cyber style) -->
         <div class="px-5 py-3.5 bg-slate-900/90 border-b border-slate-800 flex items-center justify-between text-xs">
           <div class="flex items-center gap-2.5">
-            <span class="w-3 h-3 rounded-full bg-rose-500/90 inline-block"></span>
-            <span class="w-3 h-3 rounded-full bg-amber-500/90 inline-block"></span>
-            <span class="w-3 h-3 rounded-full bg-emerald-500/90 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-rose-500/90 inline-block shadow-sm shadow-rose-500/50"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/90 inline-block shadow-sm shadow-amber-500/50"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/90 inline-block shadow-sm shadow-emerald-500/50"></span>
             <span class="ml-3 font-mono text-slate-400 font-medium" id="terminalTitle">saucedemo-e2e-suite :: pytest v9.1.1 (Python 3.11)</span>
           </div>
           <div class="font-mono text-slate-400 flex items-center gap-2 text-[11px]">
@@ -440,7 +458,7 @@
               </select>
             </div>
 
-            <button id="btnRunTests" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-black font-bold text-xs transition-all flex items-center gap-2 shadow-lg shadow-emerald-500/20">
+            <button id="btnRunTests" class="btn-shimmer px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-black font-bold text-xs transition-all flex items-center gap-2 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-400/40">
               <i class="fa-solid fa-play text-[10px]"></i>
               <span id="btnRunTestsText">Run Test Suite</span>
             </button>
@@ -643,18 +661,18 @@
   </section>
 
   <!-- Technical Competencies & Toolchain (#expertise) -->
-  <section id="expertise" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#030712]/50">
+  <section id="expertise" class="reveal-init py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#030712]/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-2">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-2.5 shadow-md">
             <i class="fa-solid fa-microchip text-[11px]"></i>
             <span>Full-Spectrum QA &amp; Test Architecture</span>
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-            Technical <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Competencies</span> &amp; Toolchain
+            Technical <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent text-glow-cyan">Competencies</span> &amp; Toolchain
           </h2>
           <p class="mt-2 text-sm sm:text-base text-slate-300 max-w-2xl">
             Modern test automation frameworks, thorough exploratory STLC techniques, API assertions, and performance profiling tools.
@@ -674,7 +692,7 @@
 
       <!-- Competency Filter Buttons -->
       <div class="flex flex-wrap gap-2 mb-8">
-        <button class="comp-filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20 transition-all" data-filter="all">All Competencies</button>
+        <button class="comp-filter-btn active btn-shimmer px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20 transition-all" data-filter="all">All Competencies</button>
         <button class="comp-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="automation">Test Automation &amp; SDET</button>
         <button class="comp-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="manual">Manual QA &amp; Test Design</button>
         <button class="comp-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-filter="api-perf">API &amp; Performance</button>
@@ -686,7 +704,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="skillsGrid">
 
         <!-- Card 1: Automation -->
-        <div class="skill-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-cyan-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="automation">
+        <div class="skill-card spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-cyan-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="automation">
           <div class="flex items-center gap-3.5 mb-4">
             <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-lg">
               <i class="fa-solid fa-robot"></i>
@@ -709,7 +727,7 @@
         </div>
 
         <!-- Card 2: Manual QA -->
-        <div class="skill-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-indigo-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="manual">
+        <div class="skill-card spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-indigo-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="manual">
           <div class="flex items-center gap-3.5 mb-4">
             <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-lg">
               <i class="fa-solid fa-list-check"></i>
@@ -732,7 +750,7 @@
         </div>
 
         <!-- Card 3: API & Performance -->
-        <div class="skill-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-purple-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="api-perf">
+        <div class="skill-card spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-purple-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="api-perf">
           <div class="flex items-center gap-3.5 mb-4">
             <div class="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
               <i class="fa-solid fa-gauge-high"></i>
@@ -755,7 +773,7 @@
         </div>
 
         <!-- Card 4: CI/CD & DevOps -->
-        <div class="skill-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-blue-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="cicd">
+        <div class="skill-card spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-blue-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="cicd">
           <div class="flex items-center gap-3.5 mb-4">
             <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-lg">
               <i class="fa-solid fa-code-branch"></i>
@@ -778,7 +796,7 @@
         </div>
 
         <!-- Card 5: Security & Networking -->
-        <div class="skill-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-emerald-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="sec">
+        <div class="skill-card spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-emerald-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="sec">
           <div class="flex items-center gap-3.5 mb-4">
             <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-lg">
               <i class="fa-solid fa-shield-virus"></i>
@@ -801,7 +819,7 @@
         </div>
 
         <!-- Card 6: Analytical Economics -->
-        <div class="skill-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-amber-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="manual">
+        <div class="skill-card spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm hover:border-amber-500/50 hover:bg-slate-900/90 transition-all shadow-lg card-hover-lift" data-group="manual">
           <div class="flex items-center gap-3.5 mb-4">
             <div class="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-lg">
               <i class="fa-solid fa-chart-pie"></i>
@@ -827,17 +845,17 @@
   </section>
 
   <!-- Featured Frameworks & Deliverables (#projects) -->
-  <section id="projects" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#020617]/40">
+  <section id="projects" class="reveal-init py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#020617]/40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
           <i class="fa-solid fa-cubes text-[11px]"></i>
           <span>Production-Grade Projects</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-          Featured <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Frameworks</span> &amp; Test Suites
+          Featured <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent text-glow-cyan">Frameworks</span> &amp; Test Suites
         </h2>
         <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
           Engineered end-to-end automation architectures, manual STLC audits, and CI/CD pipelines.
@@ -848,7 +866,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
         <!-- Project 1: SauceDemo Enterprise Playwright Automation -->
-        <div class="rounded-3xl border border-slate-800 bg-slate-900/80 backdrop-blur-xl p-7 sm:p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-950/40 transition-all group relative overflow-hidden card-hover-lift">
+        <div class="spotlight-card rounded-3xl border border-slate-800 bg-slate-900/80 backdrop-blur-xl p-7 sm:p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-950/40 transition-all group relative overflow-hidden card-hover-lift">
           <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-600"></div>
           <div>
             <div class="flex items-center justify-between gap-2 mb-4">
@@ -898,7 +916,7 @@
             </div>
 
             <div class="flex flex-wrap gap-3">
-              <a href="https://tanzimsqa.github.io/saucedemo-playwright-automation/" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/25 transition-all">
+              <a href="https://tanzimsqa.github.io/saucedemo-playwright-automation/" target="_blank" class="btn-shimmer inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-400/40 transition-all">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 <span>Live HTML Test Report</span>
               </a>
@@ -911,7 +929,7 @@
         </div>
 
         <!-- Project 2: Bangladesh Railway Manual QA Audit -->
-        <div class="rounded-3xl border border-slate-800 bg-slate-900/80 backdrop-blur-xl p-7 sm:p-8 flex flex-col justify-between hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-950/40 transition-all group relative overflow-hidden card-hover-lift">
+        <div class="spotlight-card rounded-3xl border border-slate-800 bg-slate-900/80 backdrop-blur-xl p-7 sm:p-8 flex flex-col justify-between hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-950/40 transition-all group relative overflow-hidden card-hover-lift">
           <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500"></div>
           <div>
             <div class="flex items-center justify-between gap-2 mb-4">
@@ -961,7 +979,7 @@
             </div>
 
             <div class="flex flex-wrap gap-3">
-              <a href="https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 shadow-lg shadow-indigo-500/25 transition-all">
+              <a href="https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application" target="_blank" class="btn-shimmer inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-400/40 transition-all">
                 <i class="fa-brands fa-github"></i>
                 <span>View Railway Audit Repo</span>
               </a>
@@ -979,17 +997,17 @@
   </section>
 
   <!-- Live QA Deliverables & Drive Hub (#deliverables) -->
-  <section id="deliverables" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#030712]">
+  <section id="deliverables" class="reveal-init py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#030712]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-emerald-400 bg-emerald-950/40 border border-emerald-800/60 mb-3 shadow-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-emerald-400 bg-emerald-950/40 border border-emerald-800/60 mb-3 shadow-md">
           <i class="fa-brands fa-google-drive text-[11px]"></i>
           <span>Direct Work Deliverables</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-          Verified <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">QA Deliverables</span> &amp; Workbooks
+          Verified <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent text-glow-emerald">QA Deliverables</span> &amp; Workbooks
         </h2>
         <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
           Direct Google Drive cloud access to raw test execution spreadsheets, JMeter performance graphs, and Postman API collections.
@@ -999,7 +1017,7 @@
       <!-- Deliverables Cards Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
-        <a href="https://drive.google.com/drive/folders/1n0_1rK1zHqPZjzSk22RyUpF4lextE-MZ?usp=sharing" target="_blank" class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-cyan-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
+        <a href="https://drive.google.com/drive/folders/1n0_1rK1zHqPZjzSk22RyUpF4lextE-MZ?usp=sharing" target="_blank" class="spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-cyan-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
           <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-3.5 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-file-excel"></i>
           </div>
@@ -1008,7 +1026,7 @@
           <span class="text-xs font-mono text-cyan-400 flex items-center gap-1.5 font-semibold">Open Drive Folder <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i></span>
         </a>
 
-        <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-amber-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
+        <a href="https://drive.google.com/drive/folders/1tTRZMvNXZ-s7i7ESPUNWg9mI7Z_Em_Tt?usp=sharing" target="_blank" class="spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-amber-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
           <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-3.5 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-bolt"></i>
           </div>
@@ -1017,7 +1035,7 @@
           <span class="text-xs font-mono text-amber-400 flex items-center gap-1.5 font-semibold">Open Drive Folder <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i></span>
         </a>
 
-        <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-purple-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
+        <a href="https://drive.google.com/drive/folders/1SggjOGTP8jgQEtYiCPi5yO3cbfKpGI2P?usp=sharing" target="_blank" class="spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-purple-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
           <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl mb-3.5 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-network-wired"></i>
           </div>
@@ -1026,7 +1044,7 @@
           <span class="text-xs font-mono text-purple-400 flex items-center gap-1.5 font-semibold">Open Drive Folder <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i></span>
         </a>
 
-        <a href="https://drive.google.com/drive/folders/1fDVjgI1B3xm26aLncDAqZBuB9ySttcLa?usp=sharing" target="_blank" class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-blue-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
+        <a href="https://drive.google.com/drive/folders/1fDVjgI1B3xm26aLncDAqZBuB9ySttcLa?usp=sharing" target="_blank" class="spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-blue-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
           <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-xl mb-3.5 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-globe"></i>
           </div>
@@ -1035,7 +1053,7 @@
           <span class="text-xs font-mono text-blue-400 flex items-center gap-1.5 font-semibold">Open Drive Folder <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i></span>
         </a>
 
-        <a href="https://drive.google.com/drive/folders/1OqfqJBr21r7Mpis08ZQEjSZ3wfxoxuBz?usp=sharing" target="_blank" class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-pink-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
+        <a href="https://drive.google.com/drive/folders/1OqfqJBr21r7Mpis08ZQEjSZ3wfxoxuBz?usp=sharing" target="_blank" class="spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-pink-500/50 hover:bg-slate-900 transition-all group card-hover-lift">
           <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-xl mb-3.5 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-mobile-screen-button"></i>
           </div>
@@ -1044,7 +1062,7 @@
           <span class="text-xs font-mono text-pink-400 flex items-center gap-1.5 font-semibold">Open Drive Folder <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i></span>
         </a>
 
-        <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="p-6 rounded-2xl border border-emerald-500/30 bg-emerald-950/20 hover:border-emerald-500/70 hover:bg-emerald-950/30 transition-all group card-hover-lift">
+        <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="spotlight-card p-6 rounded-2xl border border-emerald-500/30 bg-emerald-950/20 hover:border-emerald-500/70 hover:bg-emerald-950/30 transition-all group card-hover-lift">
           <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl mb-3.5 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-folder-tree"></i>
           </div>
@@ -1059,17 +1077,17 @@
   </section>
 
   <!-- Certifications & Credentials (#credentials) -->
-  <section id="credentials" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#020617]/60">
+  <section id="credentials" class="reveal-init py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#020617]/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-purple-400 bg-purple-950/40 border border-purple-800/60 mb-3 shadow-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-purple-400 bg-purple-950/40 border border-purple-800/60 mb-3 shadow-md">
           <i class="fa-solid fa-award text-[11px]"></i>
           <span>Industry Credentials</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-          Certifications &amp; <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent">Professional Badges</span>
+          Certifications &amp; <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent text-glow-purple">Professional Badges</span>
         </h2>
         <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
           Recognized industry certifications across software testing, cybersecurity, and networking.
@@ -1077,7 +1095,7 @@
 
         <!-- Certifications Filter Buttons -->
         <div class="mt-6 flex flex-wrap justify-center gap-2">
-          <button class="cert-filter-btn active px-4 py-1.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-md shadow-purple-500/20 transition-all" data-cert-filter="all">All (13)</button>
+          <button class="cert-filter-btn active btn-shimmer px-4 py-1.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-md shadow-purple-500/20 transition-all" data-cert-filter="all">All (13)</button>
           <button class="cert-filter-btn px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-cert-filter="qa">QA &amp; Automation (4)</button>
           <button class="cert-filter-btn px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-cert-filter="postman">Postman (2)</button>
           <button class="cert-filter-btn px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all" data-cert-filter="security">Cybersecurity &amp; Fortinet (4)</button>
@@ -1088,7 +1106,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="certGrid">
 
         <!-- 1. Postman API Testing Path (v12) -->
-        <div class="cert-card p-6 rounded-2xl border border-orange-500/30 bg-slate-900/70 hover:border-orange-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="postman">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-orange-500/30 bg-slate-900/70 hover:border-orange-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="postman">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0 text-lg">
@@ -1116,7 +1134,7 @@
         </div>
 
         <!-- 2. Postman API Beginner Path -->
-        <div class="cert-card p-6 rounded-2xl border border-orange-500/30 bg-slate-900/70 hover:border-orange-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="postman">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-orange-500/30 bg-slate-900/70 hover:border-orange-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="postman">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0 text-lg">
@@ -1144,7 +1162,7 @@
         </div>
 
         <!-- 3. Test Automation University -->
-        <div class="cert-card p-6 rounded-2xl border border-cyan-500/30 bg-slate-900/70 hover:border-cyan-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-cyan-500/30 bg-slate-900/70 hover:border-cyan-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 text-lg">
@@ -1172,7 +1190,7 @@
         </div>
 
         <!-- 4. Simplilearn: Automation Testing Basics -->
-        <div class="cert-card p-6 rounded-2xl border border-blue-500/30 bg-slate-900/70 hover:border-blue-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-blue-500/30 bg-slate-900/70 hover:border-blue-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 text-lg">
@@ -1200,7 +1218,7 @@
         </div>
 
         <!-- 5. Simplilearn: Introduction to Software Testing -->
-        <div class="cert-card p-6 rounded-2xl border border-blue-500/30 bg-slate-900/70 hover:border-blue-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-blue-500/30 bg-slate-900/70 hover:border-blue-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 text-lg">
@@ -1228,7 +1246,7 @@
         </div>
 
         <!-- 6. Fortinet: Fundamentals in Cybersecurity -->
-        <div class="cert-card p-6 rounded-2xl border border-purple-500/30 bg-slate-900/70 hover:border-purple-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-purple-500/30 bg-slate-900/70 hover:border-purple-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-lg">
@@ -1256,7 +1274,7 @@
         </div>
 
         <!-- 7. Fortinet: Introduction to Threat Landscape 3.0 -->
-        <div class="cert-card p-6 rounded-2xl border border-purple-500/30 bg-slate-900/70 hover:border-purple-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-purple-500/30 bg-slate-900/70 hover:border-purple-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-lg">
@@ -1279,7 +1297,7 @@
         </div>
 
         <!-- 8. Fortinet: Getting Started in Cybersecurity 3.0 -->
-        <div class="cert-card p-6 rounded-2xl border border-purple-500/30 bg-slate-900/70 hover:border-purple-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-purple-500/30 bg-slate-900/70 hover:border-purple-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-lg">
@@ -1302,7 +1320,7 @@
         </div>
 
         <!-- 9. IT Training BD: Full Stack SQA Track & Workshop -->
-        <div class="cert-card p-6 rounded-2xl border border-cyan-500/30 bg-slate-900/70 hover:border-cyan-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-cyan-500/30 bg-slate-900/70 hover:border-cyan-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="qa">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 text-lg">
@@ -1325,7 +1343,7 @@
         </div>
 
         <!-- 10. Certified Ethical Hacker (CEH) -->
-        <div class="cert-card p-6 rounded-2xl border border-rose-500/30 bg-slate-900/70 hover:border-rose-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-rose-500/30 bg-slate-900/70 hover:border-rose-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="security">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 shrink-0 text-lg">
@@ -1348,7 +1366,7 @@
         </div>
 
         <!-- 11. MikroTik Certified Network Associate (MTCNA) -->
-        <div class="cert-card p-6 rounded-2xl border border-emerald-500/30 bg-slate-900/70 hover:border-emerald-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="network">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-emerald-500/30 bg-slate-900/70 hover:border-emerald-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="network">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 text-lg">
@@ -1371,7 +1389,7 @@
         </div>
 
         <!-- 12. MikroTik Certified Routing Engineer (MTCRE) -->
-        <div class="cert-card p-6 rounded-2xl border border-emerald-500/30 bg-slate-900/70 hover:border-emerald-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="network">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-emerald-500/30 bg-slate-900/70 hover:border-emerald-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="network">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 text-lg">
@@ -1394,7 +1412,7 @@
         </div>
 
         <!-- 13. MikroTik Certified Security Engineer (MTCSE) -->
-        <div class="cert-card p-6 rounded-2xl border border-emerald-500/30 bg-slate-900/70 hover:border-emerald-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="network">
+        <div class="cert-card spotlight-card holo-badge-card p-6 rounded-2xl border border-emerald-500/30 bg-slate-900/70 hover:border-emerald-500/60 transition-all flex flex-col justify-between group card-hover-lift" data-cert-category="network">
           <div>
             <div class="flex items-start gap-3.5 mb-3.5">
               <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 text-lg">
@@ -1422,17 +1440,17 @@
   </section>
 
   <!-- Experience & Education (#experience) -->
-  <section id="experience" class="py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#030712]">
+  <section id="experience" class="reveal-init py-16 scroll-mt-16 relative border-t border-slate-800/80 bg-[#030712]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
           <i class="fa-solid fa-briefcase text-[11px]"></i>
           <span>Track Record &amp; Foundation</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Professional Experience &amp; Academic Background
+          Professional <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent text-glow-cyan">Experience</span> &amp; Academic Background
         </h2>
         <p class="text-sm sm:text-base text-slate-300 mt-2">
           From hands-on product QA and defect lifecycle engineering to quantitative reasoning and industry mentorship.
@@ -1440,7 +1458,7 @@
       </div>
 
       <!-- Featured Experience Card: Koy Jabo -->
-      <div class="mb-14 p-6 sm:p-8 rounded-3xl border border-cyan-500/40 bg-gradient-to-br from-slate-900/95 via-slate-900/70 to-cyan-950/20 backdrop-blur-xl shadow-2xl shadow-cyan-950/30 relative overflow-hidden group">
+      <div class="spotlight-card mb-14 p-6 sm:p-8 rounded-3xl border border-cyan-500/40 bg-gradient-to-br from-slate-900/95 via-slate-900/70 to-cyan-950/20 backdrop-blur-xl shadow-2xl shadow-cyan-950/30 relative overflow-hidden group">
         <div class="absolute -right-16 -top-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-cyan-500/20 transition-all"></div>
         
         <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
@@ -1511,7 +1529,7 @@
         
         <!-- Left: Academic Background -->
         <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-3 shadow-md">
             <i class="fa-solid fa-graduation-cap text-[11px]"></i>
             <span>Education</span>
           </div>
@@ -1519,38 +1537,29 @@
             Academic Background
           </h2>
 
-          <div class="space-y-6 relative border-l-2 border-slate-800 pl-6 ml-3">
-            
-            <div class="relative">
-              <span class="w-3.5 h-3.5 rounded-full bg-cyan-400 absolute -left-[31px] top-1.5 shadow-md shadow-cyan-400/50"></span>
-              <span class="text-xs font-mono text-cyan-400 font-semibold">2024 GRADUATE</span>
-              <h4 class="text-base font-bold text-white mt-0.5">Bachelor of Social Sciences (B.S.S.) in Economics</h4>
-              <p class="text-xs text-slate-400 mt-1">National University of Bangladesh &bull; CGPA: 2.92 / 4.00</p>
-              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                Focused on statistical analysis, economic theory, quantitative models, and deductive decision structures that form the backbone of modern edge-case QA testing.
-              </p>
+          <div class="spotlight-card p-6 sm:p-7 rounded-2xl border border-slate-800 bg-slate-900/60 relative overflow-hidden card-hover-lift">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 text-xl font-bold">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">2024 GRADUATE</span>
+                  <span class="text-xs font-mono text-slate-400">CGPA: 2.92 / 4.00</span>
+                </div>
+                <h4 class="text-base font-bold text-white mt-1.5">Bachelor of Social Sciences (B.S.S.) in Economics</h4>
+                <div class="text-xs font-mono text-cyan-400 mt-0.5">National University of Bangladesh</div>
+                <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                  Focused on statistical analysis, economic theory, quantitative models, and deductive decision structures that form the backbone of modern edge-case QA testing.
+                </p>
+              </div>
             </div>
-
-            <div class="relative">
-              <span class="w-3 h-3 rounded-full bg-slate-700 absolute -left-[30px] top-1.5"></span>
-              <span class="text-xs font-mono text-slate-500">2017</span>
-              <h4 class="text-base font-bold text-white mt-0.5">Higher Secondary Certificate (HSC) — Science</h4>
-              <p class="text-xs text-slate-400 mt-1">GPA: 3.92 / 5.00</p>
-            </div>
-
-            <div class="relative">
-              <span class="w-3 h-3 rounded-full bg-slate-700 absolute -left-[30px] top-1.5"></span>
-              <span class="text-xs font-mono text-slate-500">2015</span>
-              <h4 class="text-base font-bold text-white mt-0.5">Secondary School Certificate (SSC) — Science</h4>
-              <p class="text-xs text-slate-400 mt-1">GPA: 4.71 / 5.00</p>
-            </div>
-
           </div>
         </div>
 
         <!-- Right: Professional Reference & Mentorship -->
         <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium text-purple-400 bg-purple-950/40 border border-purple-800/60 mb-3 shadow-md">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-purple-400 bg-purple-950/40 border border-purple-800/60 mb-3 shadow-md">
             <i class="fa-solid fa-user-check text-[11px]"></i>
             <span>Professional Endorsement</span>
           </div>
@@ -1558,7 +1567,7 @@
             Industry Reference &amp; Mentorship
           </h2>
 
-          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 relative overflow-hidden mb-6 card-hover-lift">
+          <div class="spotlight-card p-6 rounded-2xl border border-slate-800 bg-slate-900/60 relative overflow-hidden mb-6 card-hover-lift">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-xl font-bold font-mono">
                 SR
@@ -1577,7 +1586,7 @@
             </div>
           </div>
 
-          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/40">
+          <div class="spotlight-card p-5 rounded-2xl border border-slate-800 bg-slate-900/40 card-hover-lift">
             <h5 class="text-xs font-mono text-cyan-400 uppercase tracking-wider mb-1.5 font-bold">Continuous Training Organization</h5>
             <div class="text-sm font-bold text-white">IT Training BD</div>
             <div class="text-xs text-slate-400 mt-0.5">United States-based technical training organization</div>
@@ -1594,7 +1603,7 @@
   </section>
 
   <!-- Contact & Collaboration (#contact) -->
-  <footer id="contact" class="py-20 relative border-t border-slate-800/80 bg-[#020617] text-center">
+  <footer id="contact" class="reveal-init py-20 relative border-t border-slate-800/80 bg-[#020617] text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 mb-4 shadow-md">
@@ -1603,7 +1612,7 @@
       </div>
 
       <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
-        Ready to Ship <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">High-Confidence</span>, Resilient Releases?
+        Ready to Ship <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent text-glow-cyan">High-Confidence</span>, Resilient Releases?
       </h2>
       <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed mb-8">
         Currently driving software quality at <b>Koy Jabo</b> and open to Junior/Mid SQA Engineer roles, QA automation pipelines, and high-impact QA collaborations.
@@ -1611,22 +1620,22 @@
 
       <!-- Direct Contact Channels -->
       <div class="flex flex-wrap justify-center gap-3.5 mb-12">
-        <a href="mailto:tanzimsqa@gmail.com" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+        <a href="mailto:tanzimsqa@gmail.com" class="btn-shimmer inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
           <i class="fa-solid fa-envelope"></i>
           <span>tanzimsqa@gmail.com</span>
         </a>
-        <a href="https://wa.me/8801992321575" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-950/60 border border-emerald-700/60 hover:bg-emerald-900/60 hover:-translate-y-0.5 transition-all shadow-lg shadow-emerald-950/30">
+        <a href="https://wa.me/8801992321575" target="_blank" class="btn-shimmer inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-950/60 border border-emerald-700/60 hover:bg-emerald-900/60 hover:-translate-y-0.5 transition-all shadow-lg shadow-emerald-950/30">
           <i class="fa-brands fa-whatsapp"></i>
           <span>+880 1992-321575</span>
         </a>
-        <a href="https://www.linkedin.com/in/tanzimbpl/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-blue-300 bg-blue-950/60 border border-blue-700/60 hover:bg-blue-900/60 hover:-translate-y-0.5 transition-all shadow-lg shadow-blue-950/30">
+        <a href="https://www.linkedin.com/in/tanzimbpl/" target="_blank" class="btn-shimmer inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-blue-300 bg-blue-950/60 border border-blue-700/60 hover:bg-blue-900/60 hover:-translate-y-0.5 transition-all shadow-lg shadow-blue-950/30">
           <i class="fa-brands fa-linkedin"></i>
           <span>LinkedIn Connect</span>
         </a>
       </div>
 
       <!-- Quick Message Form -->
-      <div class="max-w-lg mx-auto p-7 rounded-3xl border border-slate-800 bg-slate-900/80 text-left mb-12 backdrop-blur-xl shadow-2xl">
+      <div class="spotlight-card max-w-lg mx-auto p-7 sm:p-8 rounded-3xl border border-slate-800 bg-slate-900/80 text-left mb-12 backdrop-blur-xl shadow-2xl">
         <h4 class="text-base font-bold text-white mb-1">Quick Inquiries</h4>
         <p class="text-xs text-slate-400 mb-4">Send a direct message or role invitation to Tanzim.</p>
         
@@ -1634,19 +1643,19 @@
           <div>
             <label class="text-[11px] font-mono text-slate-400 block mb-1">Your Name or Organization</label>
             <input type="text" id="senderName" required placeholder="e.g. Sarah / Tech Lead" 
-                   class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 font-sans" />
+                   class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500/80 font-sans transition-colors" />
           </div>
           <div>
             <label class="text-[11px] font-mono text-slate-400 block mb-1">Your Email</label>
             <input type="email" id="senderEmail" required placeholder="e.g. sarah@company.com" 
-                   class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 font-sans" />
+                   class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500/80 font-sans transition-colors" />
           </div>
           <div>
             <label class="text-[11px] font-mono text-slate-400 block mb-1">Message</label>
             <textarea id="senderMsg" rows="3" required placeholder="Describe role, project, or testing requirements..." 
-                      class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 font-sans"></textarea>
+                      class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500/80 font-sans transition-colors"></textarea>
           </div>
-          <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black font-bold text-xs transition-all flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20">
+          <button type="submit" class="btn-shimmer w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black font-bold text-xs transition-all flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-400/40">
             <i class="fa-solid fa-paper-plane text-[11px]"></i>
             <span>Send Message Directly</span>
           </button>
