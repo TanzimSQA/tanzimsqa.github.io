@@ -1,0 +1,27 @@
+# Tanzim Rahman (TanzimSQA)
+
+> Software Quality Assurance (SQA) Engineer at Koy Jabo specializing in enterprise Playwright test automation with Python, REST API validation with Postman, performance profiling with Apache JMeter, and end-to-end QA lifecycle management.
+
+## Summary
+- **Full Name**: Tanzim Rahman
+- **Brand / Username**: TanzimSQA
+- **Current Position**: Software Quality Assurance (SQA) Engineer at Koy Jabo
+- **Location**: Dhaka, Bangladesh
+- **Official Portfolio**: https://tanzimsqa.github.io/
+- **GitHub**: https://github.com/TanzimSQA
+- **LinkedIn**: https://www.linkedin.com/in/tanzimsqa/
+- **Facebook**: https://www.facebook.com/tanzim.rahman.bpl/
+- **Email**: tanzimsqa@gmail.com
+- **Phone / WhatsApp**: +880 1992-321575
+
+## Core Competencies & Specializations
+- **Test Automation**: Playwright with Python & Pytest, Page Object Model (POM) architecture, cross-browser test suites, data-driven execution, robust locator strategies.
+- **API Testing**: Postman collections, Newman CLI automation, REST & GraphQL verification, JSON schema validation, automated test assertion pipelines.
+- **Performance & Load Testing**: Apache JMeter load profiling, stress testing, latency and throughput benchmarking.
+- **QA Lifecycle & Defect Management**: Manual test design (Boundary Value Analysis, Equivalence Partitioning), Jira defect lifecycle, STLC workflows, smoke & regression testing.
+- **CI/CD Quality Gates**: GitHub Actions automated test runners, artifact archiving, and automated build verification testing.
+
+## Live QA Projects & Interactive Test Reports
+- [SauceDemo Playwright Automation Suite](https://tanzimsqa.github.io/saucedemo-playwright-automation/): Enterprise-grade E2E test automation framework built with Python, Pytest, and Playwright featuring detailed HTML execution reporting.
+- [Playwright API Testing Framework](https://tanzimsqa.github.io/playwright-api-testing-framework/): Automated API test framework validating RESTful endpoints, payload integrity, schema contracts, and Newman integration.
+- [GitHub Repositories](https://github.com/TanzimSQA): Comprehensive public test automation suites, utilities, and documentation.
