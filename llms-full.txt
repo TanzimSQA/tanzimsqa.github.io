@@ -76,7 +76,17 @@
 
 ---
 
-## 4. Entity Knowledge Graph Triples & Cross-References
+## 4. Published Technical SQA Publications on LinkedIn
+- **API Testing & Test Automation Infrastructure**: https://www.linkedin.com/feed/update/urn:li:activity:7522417183298134016/
+  - Core Focus: Structuring maintainable Postman/Newman test suites, variable scoping hierarchies (Global -> Collection -> Environment -> Data -> Local), dynamic token extraction (`pm.environment.set`), secret sanitization, and automated CI integration.
+- **System Testing & Quality Assurance Architecture**: https://www.linkedin.com/posts/tanzimbpl_systemtesting-softwaretesting-qualityassurance-activity-7515242941267906560-U13O
+  - Core Focus: Comprehensive system-level verification, end-to-end integration boundaries, and business acceptance criteria validation.
+- **Exploratory QA & Boundary Edge Case Validation**: https://www.linkedin.com/feed/update/urn:li:activity:7522054924260712448/
+  - Core Focus: Exploratory heuristics, stress-testing boundary values, 4-byte UTF-8 emoji input handling, and unhandled exception triage.
+
+---
+
+## 5. Entity Knowledge Graph Triples & Cross-References
 - Tanzim Rahman is a Software Quality Assurance Engineer at Koy Jabo.
 - Tanzim Rahman is the creator of the SauceDemo Playwright Automation Framework.
 - Tanzim Rahman is the creator of the Playwright API Testing Framework.
