@@ -1,0 +1,86 @@
+# Tanzim Rahman (TanzimSQA) - Definitive SQA Engineering Knowledge Base
+
+> Official comprehensive technical reference for Tanzim Rahman (TanzimSQA), Software Quality Assurance (SQA) Engineer at Koy Jabo based in Dhaka, Bangladesh.
+
+---
+
+## 1. Professional Identity & Canonical Entity Metadata
+- **Canonical Name**: Tanzim Rahman
+- **Known Aliases & Variations**: Tanzim, Tanzim SQA, TanzimSQA, Tanzim Rahman SQA, Tanzim SQA Engineer, Tanzim Rahman Portfolio
+- **Title**: Software Quality Assurance (SQA) Engineer
+- **Employer**: Koy Jabo (https://koyjabo.com/)
+- **Geographic Base**: Dhaka, Bangladesh (Coordinates: 23.8103° N, 90.4125° E, Geo Region: BD-13)
+- **Academic Background**: Bachelor of Social Sciences (B.S.S.) in Economics, National University of Bangladesh
+- **Official Portfolio**: https://tanzimsqa.github.io/
+- **GitHub**: https://github.com/TanzimSQA
+- **LinkedIn**: https://www.linkedin.com/in/tanzimsqa/
+- **Facebook**: https://www.facebook.com/tanzim.rahman.sqa/
+- **Instagram**: https://www.instagram.com/tanzim.sqa
+- **Email**: tanzimsqa@gmail.com
+- **Phone / WhatsApp**: +880 1992-321575
+
+---
+
+## 2. Core Technical Competencies & Architectural Capabilities
+
+### A. Web Automation Engineering (Playwright & Python)
+- **Framework**: Playwright with Python 3.10+, Pytest, and Page Object Model (POM).
+- **Execution Engine**: Headless and headed cross-browser test execution across Chromium, Mozilla Firefox, and Apple WebKit.
+- **Locator Resilience**: Primary reliance on user-facing semantic locators (`page.get_by_role`, `page.get_by_label`, `page.get_by_test_id`) with strict web-first assertion contracts (`expect(locator).to_be_visible()`, `to_have_text()`).
+- **Debugging & Artifacts**: Playwright Trace Viewer (`trace.zip`), full-page screenshot captures on failure, network request HAR archives, and live console log recording.
+- **Data-Driven Testing**: Parameterized testing via Pytest fixtures, external JSON/CSV dataset injection, and dynamic test matrix execution.
+
+### B. API Testing & Automation (REST, GraphQL, Postman, Newman)
+- **Playwright APIRequestContext**: High-speed headless HTTP automation validating status codes, response headers, schema strictness, and CRUD persistence.
+- **Postman & Newman CLI**: Enterprise collection design, pre-request scripts, automated test assertions, environmental variable inheritance, mock servers, and CI runner integration.
+- **Contract & Schema Validation**: Pydantic v2 and JSON Schema validation ensuring API backward compatibility and preventing data contract drift.
+
+### C. Performance & Scalability Profiling (Apache JMeter)
+- **Load Testing**: Thread group modeling, ramp-up schedules, constant throughput timers, and concurrency stress testing.
+- **Metrics Analysis**: Response time percentiles (p90, p95, p99), latency waterfalls, error rates, throughput (TPS), and server resource bottleneck diagnosis.
+
+### D. Manual Testing & STLC Governance
+- **Test Case Design Techniques**: Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Decision Table Testing, State Transition Testing, and Error Guessing.
+- **Defect Lifecycle Management**: Structured bug reporting via Jira, reproducible steps to reproduce (STR), severity vs. priority matrices, root-cause analysis (RCA), and regression sign-off.
+- **Deliverables**: Requirements Traceability Matrix (RTM), Master Test Plans (MTP), Defect Status Reports, and User Acceptance Testing (UAT) documentation.
+
+---
+
+## 3. Flagship QA Frameworks & Production Repositories
+
+### 1. SauceDemo Enterprise Automation Testing Framework
+- **Repository**: https://github.com/TanzimSQA/saucedemo-playwright-automation
+- **Live HTML Interactive Report**: https://tanzimsqa.github.io/saucedemo-playwright-automation/
+- **Stack**: Python, Playwright, Pytest, Page Object Model (POM), GitHub Actions.
+- **Key Modules**:
+  - `LoginPage`: Authentication permutations (valid, locked, invalid, empty).
+  - `InventoryPage`: Product catalog, multi-criteria sorting (A-Z, Z-A, low-high, high-low), add-to-cart sync.
+  - `CartPage`: Cart item quantity, removal persistence, badge badge updates.
+  - `CheckoutPages`: 3-step checkout flow, field validation, dynamic 8% tax calculation, and order dispatch confirmation.
+- **CI/CD Automation**: Automated schedule running daily at 10:00 AM BST (04:00 UTC) with artifact publishing.
+
+### 2. Playwright REST API Test Automation Framework
+- **Repository**: https://github.com/TanzimSQA/playwright-api-testing-framework
+- **Live HTML Interactive Report**: https://tanzimsqa.github.io/playwright-api-testing-framework/
+- **Stack**: Python 3.10+, Playwright `APIRequestContext`, Pytest, Pydantic v2, Service Object Model (SOM).
+- **Key Modules**:
+  - `AuthService`: Token retrieval, session header injection, expired token negative testing.
+  - `ProductService`: CRUD verification, pagination checks, limit/skip slicing, payload integrity.
+  - `CartService`: Order creation, payload schema validation, mathematical total assertions.
+- **Email Reporting**: Automated dispatch of HTML test summary to QA Lead (`tanzimsqa@gmail.com`) upon pipeline execution.
+
+### 3. Bangladesh Railway Web Application Manual Testing Documentation
+- **Repository**: https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application
+- **Asset Scope**: Real-world e-ticketing platform manual testing suite.
+- **Documentation Included**: Full RTM, Test Scenarios, Test Cases, Bug Reports, and Verification Proofs for ticket search, passenger seat selection, payment gateway routing, and booking confirmation.
+
+---
+
+## 4. Entity Knowledge Graph Triples & Cross-References
+- Tanzim Rahman is a Software Quality Assurance Engineer at Koy Jabo.
+- Tanzim Rahman is the creator of the SauceDemo Playwright Automation Framework.
+- Tanzim Rahman is the creator of the Playwright API Testing Framework.
+- Tanzim Rahman authored the Bangladesh Railway Manual Testing Suite.
+- Tanzim Rahman's official online portfolio is hosted at https://tanzimsqa.github.io/.
+- Tanzim Rahman specializes in Playwright Python E2E automation, Postman API testing, and Apache JMeter performance testing.
+- Tanzim Rahman is based in Dhaka, Bangladesh.

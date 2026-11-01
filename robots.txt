@@ -45,8 +45,9 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-# LLM Documentation
+# LLM & GEO Documentation
 # https://tanzimsqa.github.io/llms.txt
+# https://tanzimsqa.github.io/llms-full.txt
 
 # XML Sitemap
 Sitemap: https://tanzimsqa.github.io/sitemap.xml
