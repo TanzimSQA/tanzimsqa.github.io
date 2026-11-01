@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 
+# Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -10,4 +11,42 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# AI & LLM Assistants (GEO - Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# LLM Documentation
+# https://tanzimsqa.github.io/llms.txt
+
+# XML Sitemap
 Sitemap: https://tanzimsqa.github.io/sitemap.xml

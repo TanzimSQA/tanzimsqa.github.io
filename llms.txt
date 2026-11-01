@@ -2,9 +2,9 @@
 
 > Software Quality Assurance (SQA) Engineer at Koy Jabo specializing in enterprise Playwright test automation with Python, REST API validation with Postman, performance profiling with Apache JMeter, and end-to-end QA lifecycle management.
 
-## Summary
+## Summary & Professional Identity
 - **Full Name**: Tanzim Rahman
-- **Brand / Username**: TanzimSQA
+- **Known As / Username**: TanzimSQA | Tanzim SQA
 - **Current Position**: Software Quality Assurance (SQA) Engineer at Koy Jabo
 - **Location**: Dhaka, Bangladesh
 - **Official Portfolio**: https://tanzimsqa.github.io/
@@ -16,13 +16,14 @@
 - **Phone / WhatsApp**: +880 1992-321575
 
 ## Core Competencies & Specializations
-- **Test Automation**: Playwright with Python & Pytest, Page Object Model (POM) architecture, cross-browser test suites, data-driven execution, robust locator strategies.
-- **API Testing**: Postman collections, Newman CLI automation, REST & GraphQL verification, JSON schema validation, automated test assertion pipelines.
-- **Performance & Load Testing**: Apache JMeter load profiling, stress testing, latency and throughput benchmarking.
-- **QA Lifecycle & Defect Management**: Manual test design (Boundary Value Analysis, Equivalence Partitioning), Jira defect lifecycle, STLC workflows, smoke & regression testing.
-- **CI/CD Quality Gates**: GitHub Actions automated test runners, artifact archiving, and automated build verification testing.
+- **Web Automation**: Playwright with Python & Pytest, Page Object Model (POM) architecture, cross-browser test suites (Chromium, Firefox, WebKit), data-driven execution, resilient locator strategies, fixture management, and Playwright Trace Viewer debugging.
+- **API Testing**: Postman collections, Newman CLI automation, REST & GraphQL verification, JSON schema validation, automated test assertions, mock servers, and environment parameterization.
+- **Performance & Load Testing**: Apache JMeter load profiling, stress testing, response time analysis, throughput benchmarking, and bottleneck identification.
+- **QA Lifecycle & Defect Management**: Manual test design (Boundary Value Analysis, Equivalence Partitioning, Decision Tables), Jira defect lifecycle, STLC workflows, smoke & regression test planning.
+- **CI/CD Quality Gates**: GitHub Actions automated test runners, artifact archiving, HTML report generation, and continuous deployment validation.
 
 ## Live QA Projects & Interactive Test Reports
-- [SauceDemo Playwright Automation Suite](https://tanzimsqa.github.io/saucedemo-playwright-automation/): Enterprise-grade E2E test automation framework built with Python, Pytest, and Playwright featuring detailed HTML execution reporting.
+- [SauceDemo Playwright Automation Suite](https://tanzimsqa.github.io/saucedemo-playwright-automation/): Enterprise-grade E2E test automation framework built with Python, Pytest, and Playwright featuring full Page Object Model and detailed HTML execution reporting.
 - [Playwright API Testing Framework](https://tanzimsqa.github.io/playwright-api-testing-framework/): Automated API test framework validating RESTful endpoints, payload integrity, schema contracts, and Newman integration.
+- [Bangladesh Railway Web Application Manual Testing](https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application): Comprehensive manual testing documentation, test scenarios, RTM (Requirements Traceability Matrix), and defect reports for ticketing workflows.
 - [GitHub Repositories](https://github.com/TanzimSQA): Comprehensive public test automation suites, utilities, and documentation.
