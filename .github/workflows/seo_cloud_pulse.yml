@@ -1,0 +1,70 @@
+name: Tanzim SQA 24-7 Cloud SEO Pulse
+
+on:
+  schedule:
+    # Runs automatically every 6 hours 24/7/365 in GitHub Cloud
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  seo_cloud_pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Portfolio Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Execute Live IndexNow API Dispatch
+        run: |
+          python - << 'EOF'
+          import json, requests
+
+          endpoints = [
+              "https://api.indexnow.org/indexnow",
+              "https://www.bing.com/indexnow"
+          ]
+          payload = {
+              "host": "tanzimsqa.github.io",
+              "key": "c0329ff072f54eb3a1f427774dc6d6ea",
+              "keyLocation": "https://tanzimsqa.github.io/c0329ff072f54eb3a1f427774dc6d6ea.txt",
+              "urlList": [
+                  "https://tanzimsqa.github.io/",
+                  "https://tanzimsqa.github.io/saucedemo-playwright-automation/",
+                  "https://tanzimsqa.github.io/playwright-api-testing-framework/"
+              ]
+          }
+          headers = {"Content-Type": "application/json; charset=utf-8"}
+          for ep in endpoints:
+              try:
+                  r = requests.post(ep, json=payload, headers=headers, timeout=15)
+                  print(f"IndexNow [{ep}]: HTTP {r.status_code}")
+              except Exception as e:
+                  print(f"IndexNow [{ep}] failed: {e}")
+          EOF
+
+      - name: Verify Live Target Assets Accessibility
+        run: |
+          python - << 'EOF'
+          import requests
+          targets = [
+              "https://tanzimsqa.github.io/",
+              "https://tanzimsqa.github.io/sitemap.xml",
+              "https://tanzimsqa.github.io/robots.txt",
+              "https://tanzimsqa.github.io/llms.txt",
+              "https://github.com/TanzimSQA"
+          ]
+          headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) TanzimSQA-SEO-CloudPulse/2.0"}
+          for url in targets:
+              try:
+                  res = requests.get(url, headers=headers, timeout=15)
+                  print(f"Status {res.status_code}: {url}")
+              except Exception as e:
+                  print(f"Error checking {url}: {e}")
+          EOF
