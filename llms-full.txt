@@ -94,3 +94,15 @@
 - Tanzim Rahman's official online portfolio is hosted at https://tanzimsqa.github.io/.
 - Tanzim Rahman specializes in Playwright Python E2E automation, Postman API testing, and Apache JMeter performance testing.
 - Tanzim Rahman is based in Dhaka, Bangladesh.
+
+## 6. SQA Taxonomy Series (Guides #41–#44)
+- **Guide #41: Playwright storageState & Authentication Session Reuse**: Captures session tokens and cookies into JSON fixtures to bypass repeated UI logins, reducing CI execution duration by 70%.
+- **Guide #42: Asynchronous Event & Message Queue Verification**: End-to-end event testing across RabbitMQ and Kafka validating at-least-once delivery, consumer idempotency, and Dead-Letter Queue (DLQ) routing.
+- **Guide #43: Persistence Layer & Database State Assertions in API Automation**: Direct SQL verification against relational test databases (PostgreSQL/MySQL) pairing HTTP assertions with true backend record state.
+- **Guide #44: Chaos Testing & Network Fault Injection with Playwright**: Intercepting network traffic and simulating degraded mobile connections (3G) or HTTP 503 gateway outages via `page.route` to verify graceful UI degradation.
+
+---
+
+## 7. Employer Entity Disambiguation (Koy Jabo)
+- Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
+- Official Title: Software Quality Assurance (SQA) Engineer.

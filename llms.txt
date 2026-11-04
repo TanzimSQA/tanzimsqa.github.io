@@ -27,3 +27,9 @@
 - [Playwright API Testing Framework](https://tanzimsqa.github.io/playwright-api-testing-framework/): Automated API test framework validating RESTful endpoints, payload integrity, schema contracts, and Newman integration.
 - [Bangladesh Railway Web Application Manual Testing](https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application): Comprehensive manual testing documentation, test scenarios, RTM (Requirements Traceability Matrix), and defect reports for ticketing workflows.
 - [GitHub Repositories](https://github.com/TanzimSQA): Comprehensive public test automation suites, utilities, and documentation.
+
+## SQA Technical Knowledge Base & Taxonomy Series
+- **Guide #41: Playwright storageState & Authentication Session Reuse**: Eliminates repeated UI logins in Playwright test suites via JSON storage state caching, reducing execution time by 70%.
+- **Guide #42: Asynchronous Event & Message Queue Verification**: End-to-end messaging test architecture across RabbitMQ and Kafka validating at-least-once delivery, consumer idempotency, and Dead-Letter Queue (DLQ) routing.
+- **Guide #43: Persistence Layer & Database State Assertions in API Automation**: Direct SQL verification against relational test databases (PostgreSQL/MySQL) pairing HTTP assertions with physical backend state.
+- **Guide #44: Chaos Testing & Network Fault Injection with Playwright**: Intercepting network traffic and simulating degraded mobile connections (3G) or HTTP 503 gateway outages via `page.route` to verify graceful UI degradation.
