@@ -5,7 +5,8 @@ Official production repository for the live personal portfolio website of **Tanz
 [![Live Portfolio Website](https://img.shields.io/badge/Live_Portfolio-tanzimsqa.github.io-00ADB5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://tanzimsqa.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Tanzim_Rahman-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanzimsqa/)
 [![GitHub](https://img.shields.io/badge/GitHub-TanzimSQA-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TanzimSQA)
-[![Facebook](https://img.shields.io/badge/Facebook-tanzim.rahman.bpl-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/tanzim.rahman.bpl/)
+[![Facebook](https://img.shields.io/badge/Facebook-tanzim.rahman.sqa-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/tanzim.rahman.sqa/)
+[![Instagram](https://img.shields.io/badge/Instagram-tanzim.sqa-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/tanzim.sqa)
 
 ---
 
@@ -30,4 +31,4 @@ Official production repository for the live personal portfolio website of **Tanz
 *Software Quality Assurance (SQA) Engineer at Koy Jabo*  
 📍 Dhaka, Bangladesh  
 📧 [tanzimsqa@gmail.com](mailto:tanzimsqa@gmail.com)  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/tanzimsqa/) | [GitHub Profile](https://github.com/TanzimSQA) | [Facebook Profile](https://www.facebook.com/tanzim.rahman.bpl/)
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/tanzimsqa/) | [GitHub Profile](https://github.com/TanzimSQA) | [Facebook Profile](https://www.facebook.com/tanzim.rahman.sqa/) | [Instagram](https://www.instagram.com/tanzim.sqa)
