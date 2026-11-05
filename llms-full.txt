@@ -86,6 +86,19 @@
 
 ---
 
+- **API Testing & HTTP Methods Specification**: https://www.linkedin.com/in/tanzimsqa/
+  - Core Focus: RFC 9110 HTTP method semantics, safe vs idempotent operations, status code contracts, and mutation regression prevention in SQA.
+- **Risk-Based Testing (RBT) in Software Quality Assurance**: https://www.linkedin.com/in/tanzimsqa/
+  - Core Focus: Prioritizing QA test execution based on financial impact, safety hazards, and defect likelihood rather than impossible exhaustive testing.
+- **GUI Layout & Visual Testing Architecture**: https://www.linkedin.com/in/tanzimsqa/
+  - Core Focus: Systematic verification bridging Figma design tokens with rendered DOM output, validating pixel alignment, typography descenders, button states, and design system fidelity.
+- **Internationalization (I18n) Architecture Testing**: https://www.linkedin.com/in/tanzimsqa/
+  - Core Focus: Validating that core software architectures dynamically support global character sets (Unicode UTF-8), bidirectional RTL layouts, and currency formatting without code modifications.
+- **Localization (L10n) Testing in Quality Assurance**: https://www.linkedin.com/in/tanzimsqa/
+  - Core Focus: Linguistic precision, string truncation prevention, date/time endianness, and cultural formatting across international target locales.
+- **Performance Testing Pillars, Types & Bottlenecks**: https://www.linkedin.com/in/tanzimsqa/
+  - Core Focus: Latency percentiles (p90, p95, p99), throughput (TPS), soak testing, and load profiling using Apache JMeter and Grafana k6.
+
 ## 5. Entity Knowledge Graph Triples & Cross-References
 - Tanzim Rahman is a Software Quality Assurance Engineer at Koy Jabo.
 - Tanzim Rahman is the creator of the SauceDemo Playwright Automation Framework.
