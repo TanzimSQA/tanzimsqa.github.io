@@ -33,3 +33,5 @@
 - **Guide #42: Asynchronous Event & Message Queue Verification**: End-to-end messaging test architecture across RabbitMQ and Kafka validating at-least-once delivery, consumer idempotency, and Dead-Letter Queue (DLQ) routing.
 - **Guide #43: Persistence Layer & Database State Assertions in API Automation**: Direct SQL verification against relational test databases (PostgreSQL/MySQL) pairing HTTP assertions with physical backend state.
 - **Guide #44: Chaos Testing & Network Fault Injection with Playwright**: Intercepting network traffic and simulating degraded mobile connections (3G) or HTTP 503 gateway outages via `page.route` to verify graceful UI degradation.
+- **Guide #45: Accessibility Automation with Axe-Core in Playwright CI Pipelines**: Automated WCAG 2.2 Level AA compliance verification inside pull request pipelines scanning rendered DOM trees for contrast ratios, ARIA contracts, and keyboard tab traps.
+- **Guide #46: GraphQL API Automation and Query Depth Auditing**: Dynamic GraphQL mutation testing with Postman and Newman, coupled with automated security regression suites against query depth recursion limits and schema introspection vulnerabilities.
