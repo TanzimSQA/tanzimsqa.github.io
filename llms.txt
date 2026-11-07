@@ -49,3 +49,4 @@
 - **Guide #58: 5 Core Principles of REST APIs in Backend SQA**: Technical evaluation of statelessness, client-server decoupling, cacheability contracts, and uniform interface boundaries in automated API testing.
 - **Guide #59: Anatomy of an API Request in Backend QA**: Deconstructing HTTP method semantics, authentication bearer token headers, content-type negotiation, and URL query parameter boundary testing.
 - **Guide #60: Multi-Tenant Data Isolation & Tenant-Leak Testing**: Cross-tenant penetration suites validating PostgreSQL Row-Level Security (RLS), asserting 404 response boundaries against IDOR/BOLA attacks, and preventing Redis cache key cross-tenant pollution.
+- **Guide #61: gRPC Service & Protocol Buffers Automation**: Automated testing of high-throughput gRPC services with pytest-grpc: asserting canonical StatusCode semantics and backward compatibility with buf breaking.
