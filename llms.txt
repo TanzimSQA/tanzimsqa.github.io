@@ -51,3 +51,4 @@
 - **Guide #60: Multi-Tenant Data Isolation & Tenant-Leak Testing**: Cross-tenant penetration suites validating PostgreSQL Row-Level Security (RLS), asserting 404 response boundaries against IDOR/BOLA attacks, and preventing Redis cache key cross-tenant pollution.
 - **Guide #61: gRPC Service & Protocol Buffers Automation**: Automated testing of high-throughput gRPC services with pytest-grpc: asserting canonical StatusCode semantics and backward compatibility with buf breaking.
 - **Guide #62: Mobile Web Touch Gesture & Viewport Emulation with Playwright**: Cross-device responsive test automation in Playwright: simulating touch events, deviceScaleFactor, viewport orientation shifts, and mobile CLS stability.
+- **Guide #63: Automated SAST & DAST Pipeline Integration in CI/CD**: DevSecOps quality gates in GitHub Actions: Semgrep static analysis, containerized OWASP ZAP dynamic scanning, and SARIF pull request reporting.

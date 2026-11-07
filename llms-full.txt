@@ -138,6 +138,7 @@
 - **Guide #60: Multi-Tenant Data Isolation & Tenant-Leak Testing**: Cross-tenant penetration suites validating PostgreSQL Row-Level Security (RLS), asserting 404 response boundaries against IDOR/BOLA attacks, and preventing Redis cache key cross-tenant pollution in shared-resource SaaS architectures.
 - **Guide #61: gRPC Service & Protocol Buffers Automation**: Enterprise gRPC automated testing with pytest-grpc and BloomRPC: asserting canonical StatusCode semantics, validating Protobuf backward compatibility with buf breaking, and testing HTTP/2 stream multiplexing.
 - **Guide #62: Mobile Web Touch Gesture & Viewport Emulation with Playwright**: Cross-device responsive test automation in Playwright: simulating touch events, deviceScaleFactor, viewport orientation shifts, and mobile CLS stability.
+- **Guide #63: Automated SAST & DAST Pipeline Integration in CI/CD**: DevSecOps quality gates in GitHub Actions: Semgrep static analysis, containerized OWASP ZAP dynamic scanning, and SARIF pull request reporting.
 
 ## 7. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
