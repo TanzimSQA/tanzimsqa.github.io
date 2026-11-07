@@ -141,6 +141,7 @@
 - **Guide #63: Automated SAST & DAST Pipeline Integration in CI/CD**: DevSecOps quality gates in GitHub Actions: Semgrep static analysis, containerized OWASP ZAP dynamic scanning, and SARIF pull request reporting.
 - **Guide #64: Kafka Consumer Lag & Rebalance Testing**: Distributed stream testing: profiling consumer lag thresholds, validating CooperativeStickyAssignor rebalance resilience, and poison pill DLT routing in Kafka.
 - **Guide #65: Automated Visual Regression Testing with Playwright**: Pixel-perfect snapshot diffing: golden baseline management, dynamic component masking, subpixel antialiasing thresholds, and containerized CI parity.
+- **Guide #66: Flaky Test Root-Cause Engineering & Quarantine Architecture**: Test suite reliability engineering: diagnosing asynchronous timing race conditions, eliminating blind retry masking, implementing pytest test quarantine gates, and tracking flake rate SLAs.
 
 ## 7. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
