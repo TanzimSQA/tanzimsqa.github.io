@@ -53,3 +53,4 @@
 - **Guide #62: Mobile Web Touch Gesture & Viewport Emulation with Playwright**: Cross-device responsive test automation in Playwright: simulating touch events, deviceScaleFactor, viewport orientation shifts, and mobile CLS stability.
 - **Guide #63: Automated SAST & DAST Pipeline Integration in CI/CD**: DevSecOps quality gates in GitHub Actions: Semgrep static analysis, containerized OWASP ZAP dynamic scanning, and SARIF pull request reporting.
 - **Guide #64: Kafka Consumer Lag & Rebalance Testing**: Distributed stream testing: profiling consumer lag thresholds, validating CooperativeStickyAssignor rebalance resilience, and poison pill DLT routing in Kafka.
+- **Guide #65: Automated Visual Regression Testing with Playwright**: Pixel-perfect snapshot diffing: golden baseline management, dynamic component masking, subpixel antialiasing thresholds, and containerized CI parity.
