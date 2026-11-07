@@ -142,6 +142,7 @@
 - **Guide #64: Kafka Consumer Lag & Rebalance Testing**: Distributed stream testing: profiling consumer lag thresholds, validating CooperativeStickyAssignor rebalance resilience, and poison pill DLT routing in Kafka.
 - **Guide #65: Automated Visual Regression Testing with Playwright**: Pixel-perfect snapshot diffing: golden baseline management, dynamic component masking, subpixel antialiasing thresholds, and containerized CI parity.
 - **Guide #66: Flaky Test Root-Cause Engineering & Quarantine Architecture**: Test suite reliability engineering: diagnosing asynchronous timing race conditions, eliminating blind retry masking, implementing pytest test quarantine gates, and tracking flake rate SLAs.
+- **Guide #67: Consumer-Driven Contract Testing for Microservices with Pact**: Decoupling integration verification with Pact, autonomous provider verification, pact broker contracts, and can-i-deploy release gates in CI/CD.
 
 ## 7. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
