@@ -48,3 +48,4 @@
 - **Guide #57: Response Time & Latency SLAs (P90, P95, P99 Percentiles)**: Latency SLA verification in performance testing: why averages mislead engineering teams and how P95/P99 tail latencies pinpoint database pool contention.
 - **Guide #58: 5 Core Principles of REST APIs in Backend SQA**: Technical evaluation of statelessness, client-server decoupling, cacheability contracts, and uniform interface boundaries in automated API testing.
 - **Guide #59: Anatomy of an API Request in Backend QA**: Deconstructing HTTP method semantics, authentication bearer token headers, content-type negotiation, and URL query parameter boundary testing.
+- **Guide #60: Multi-Tenant Data Isolation & Tenant-Leak Testing**: Cross-tenant penetration suites validating PostgreSQL Row-Level Security (RLS), asserting 404 response boundaries against IDOR/BOLA attacks, and preventing Redis cache key cross-tenant pollution.
