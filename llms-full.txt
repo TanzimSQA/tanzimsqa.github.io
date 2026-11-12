@@ -149,6 +149,7 @@
 - **Guide #71: Database Sharding & Read-Replica Lag Verification in Backend SQA**: Distributed data persistence QA: measuring PostgreSQL WAL replication lag, asserting read-after-write routing gates, testing eventual consistency thresholds, and validating uniform shard key distribution in pytest.
 - **Guide #72: GraphQL Mutation Idempotency & Batch Query Auditing in SQA**: Advanced GraphQL quality engineering: validating mutation idempotency keys in Redis, preventing N+1 database queries via DataLoader batch auditing, and enforcing AST query complexity depth limits in pytest.
 - **Guide #73: Kafka Schema Evolution & Avro Backward Compatibility Testing in SQA**: Event contract governance: asserting Schema Registry compatibility rules in CI/CD, preventing deserialization failures across consumer microservices, and testing binary Avro roundtrips.
+- **Guide #74: Automated Accessibility Regression Gates with Axe-Core in Playwright CI**: Automated accessibility compliance in CI: embedding axe-core rules engine into Playwright runs, validating WCAG 2.2 AA standards (contrast, ARIA roles, keyboard traps), and generating actionable DOM violation summaries.
 
 ## 7. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
