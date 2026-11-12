@@ -148,6 +148,7 @@
 - **Guide #70: Chaos Engineering & Network Latency Injection in QA Automation**: Full-stack resilience testing: simulating socket timeouts and TCP packet loss with Toxiproxy, verifying circuit breaker state transitions (closed, open, half-open), and asserting graceful browser fallbacks with Playwright route aborts.
 - **Guide #71: Database Sharding & Read-Replica Lag Verification in Backend SQA**: Distributed data persistence QA: measuring PostgreSQL WAL replication lag, asserting read-after-write routing gates, testing eventual consistency thresholds, and validating uniform shard key distribution in pytest.
 - **Guide #72: GraphQL Mutation Idempotency & Batch Query Auditing in SQA**: Advanced GraphQL quality engineering: validating mutation idempotency keys in Redis, preventing N+1 database queries via DataLoader batch auditing, and enforcing AST query complexity depth limits in pytest.
+- **Guide #73: Kafka Schema Evolution & Avro Backward Compatibility Testing in SQA**: Event contract governance: asserting Schema Registry compatibility rules in CI/CD, preventing deserialization failures across consumer microservices, and testing binary Avro roundtrips.
 
 ## 7. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
