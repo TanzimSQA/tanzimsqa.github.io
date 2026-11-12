@@ -145,6 +145,7 @@
 - **Guide #67: Consumer-Driven Contract Testing for Microservices with Pact**: Decoupling integration verification with Pact, autonomous provider verification, pact broker contracts, and can-i-deploy release gates in CI/CD.
 - **Guide #68: Synthetic Production Canary Probing with Playwright & Sentry Alerts**: Shift-right SQA engineering: orchestrating scheduled headless Playwright user journeys in production, emitting P95 latency telemetry, capturing HAR logs and failure screenshots in Sentry, and automating canary rollback circuit breakers.
 - **Guide #69: Distributed Tracing & Context Propagation in Microservice API Testing**: End-to-end observability testing in microservices: injecting W3C traceparent and baggage headers, correlating distributed spans with OpenTelemetry and Jaeger, validating microservice latency budgets, and enforcing downstream SLA gates in pytest.
+- **Guide #70: Chaos Engineering & Network Latency Injection in QA Automation**: Full-stack resilience testing: simulating socket timeouts and TCP packet loss with Toxiproxy, verifying circuit breaker state transitions (closed, open, half-open), and asserting graceful browser fallbacks with Playwright route aborts.
 
 ## 7. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
