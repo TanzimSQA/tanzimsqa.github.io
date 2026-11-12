@@ -154,6 +154,7 @@
 - **Guide #76: Zero-Downtime Database Schema Migration Verification in CI/CD**: High-availability database quality engineering: validating Expand-Contract migration patterns, testing dual-write triggers, preventing table-locking antipatterns (`AccessExclusiveLock`), and asserting automated batch backfill data parity in pytest.
 - **Guide #77: Continuous Profiling & Memory Leak Detection with Pyroscope in QA**: Code-level performance engineering in QA: capturing continuous CPU and heap allocation flamegraphs with Grafana Pyroscope, diagnosing memory leaks during soak tests, and enforcing memory delta thresholds in pytest.
 - **Guide #78: Continuous Memory Leak Detection & Heap Dump Profiling in QA Automation**: Resource leak verification in Python: instrumenting tracemalloc snapshots, comparing heap deltas across soak test loops, isolating uncollectable cyclical references, and blocking Out-Of-Memory (OOM) regressions in CI/CD.
+- **Guide #79: Synthetic Canary Probing with Playwright & Prometheus Telemetry in SQA**: Shift-right operational quality assurance: executing scheduled headless Playwright user journeys against live production endpoints, exporting step latency metrics to Prometheus, and automating canary deployment rollback gates.
 
 ## 7. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
