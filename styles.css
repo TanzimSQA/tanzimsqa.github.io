@@ -3,6 +3,45 @@
    High-Prestige Glassmorphism, Neon Highlights & Sleek Micro-Interactions
    ========================================================================== */
 
+/* Critical Layout Stability (Zero-CLS & Core Web Vitals) */
+header {
+  min-height: 64px;
+}
+header .h-16 {
+  height: 64px;
+}
+header + main > section:first-of-type,
+#main-content > section:first-of-type {
+  padding-top: 2rem;
+}
+@media (min-width: 1024px) {
+  header + main > section:first-of-type,
+  #main-content > section:first-of-type {
+    padding-top: 3.5rem;
+  }
+}
+.spotlight-card {
+  width: 100%;
+  max-width: 28rem;
+}
+.profile-avatar-frame {
+  width: 12rem;
+  height: 12rem;
+  max-width: 100%;
+}
+@media (min-width: 640px) {
+  .profile-avatar-frame {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+.profile-avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

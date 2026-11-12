@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       setTimeout(tickTypewriter, typeDelay);
     }
-    setTimeout(tickTypewriter, 600);
+    setTimeout(tickTypewriter, 3000);
   }
 
   // =========================================================================
