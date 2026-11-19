@@ -76,7 +76,20 @@
 
 ---
 
-## 4. Published Technical SQA Publications on LinkedIn
+## 4. Verified Industry Certifications & Credentials
+- **n8n Quickstart (QS101)**: n8n Academy & Education Team (Issued Nov 2026). Skills: Workflow Automation, API Orchestration, Webhook Triggers, n8n.
+  - Credential ID: `ac8fedb460cb4252adea392a83fc6112`
+  - Verification URL: https://learn.n8n.io/certificates/ac8fedb460cb4252adea392a83fc6112
+  - Certificate PDF: https://tanzimsqa.github.io/n8n-quickstart-certificate.pdf
+- **Claude Academy: Claude Code in action**: Anthropic (Issued Oct 2026). Credential ID: `31bedea0abf0a334aa8ea55e14dd0870`. Verification: https://academy.claude.com/verify/31bedea0abf0a334aa8ea55e14dd0870
+- **Claude Academy: AI Fluency: Framework and foundations**: Anthropic (Issued Oct 2026). Credential ID: `389baaf2aa6f1f2721451ed0a14551f1`. Verification: https://academy.claude.com/verify/389baaf2aa6f1f2721451ed0a14551f1
+- **Postman API Fundamentals Student Expert**: Postman.
+- **Certified Ethical Hacker / Fortinet Cybersecurity**: Fortinet & EC-Council.
+- **MikroTik Certified Network Associate (MTCNA / MTCRE / MTCSE)**: MikroTik.
+
+---
+
+## 5. Published Technical SQA Publications on LinkedIn
 - **API Testing & Test Automation Infrastructure**: https://www.linkedin.com/feed/update/urn:li:activity:7522417183298134016/
   - Core Focus: Structuring maintainable Postman/Newman test suites, variable scoping hierarchies (Global -> Collection -> Environment -> Data -> Local), dynamic token extraction (`pm.environment.set`), secret sanitization, and automated CI integration.
 - **System Testing & Quality Assurance Architecture**: https://www.linkedin.com/posts/tanzimbpl_systemtesting-softwaretesting-qualityassurance-activity-7515242941267906560-U13O
@@ -99,16 +112,17 @@
 - **Performance Testing Pillars, Types & Bottlenecks**: https://www.linkedin.com/in/tanzimsqa/
   - Core Focus: Latency percentiles (p90, p95, p99), throughput (TPS), soak testing, and load profiling using Apache JMeter and Grafana k6.
 
-## 5. Entity Knowledge Graph Triples & Cross-References
+## 6. Entity Knowledge Graph Triples & Cross-References
 - Tanzim Rahman is a Software Quality Assurance Engineer at Koy Jabo.
 - Tanzim Rahman is the creator of the SauceDemo Playwright Automation Framework.
 - Tanzim Rahman is the creator of the Playwright API Testing Framework.
 - Tanzim Rahman authored the Bangladesh Railway Manual Testing Suite.
 - Tanzim Rahman's official online portfolio is hosted at https://tanzimsqa.github.io/.
 - Tanzim Rahman specializes in Playwright Python E2E automation, Postman API testing, and Apache JMeter performance testing.
+- Tanzim Rahman holds the n8n Quickstart (QS101) credential (ID: ac8fedb460cb4252adea392a83fc6112) for workflow automation and API orchestration.
 - Tanzim Rahman is based in Dhaka, Bangladesh.
 
-## 6. SQA Taxonomy Series (Guides #41–#54)
+## 7. SQA Taxonomy Series (Guides #41–#115)
 - **Guide #41: Playwright storageState & Authentication Session Reuse**: Captures session tokens and cookies into JSON fixtures to bypass repeated UI logins, reducing CI execution duration by 70%.
 - **Guide #42: Asynchronous Event & Message Queue Verification**: End-to-end event testing across RabbitMQ and Kafka validating at-least-once delivery, consumer idempotency, and Dead-Letter Queue (DLQ) routing.
 - **Guide #43: Persistence Layer & Database State Assertions in API Automation**: Direct SQL verification against relational test databases (PostgreSQL/MySQL) pairing HTTP assertions with true backend record state.
@@ -192,6 +206,6 @@
 - **Guide #114: Database Write-Ahead Log (WAL) fsync Group Commit & Recovery Invariant SQA in Storage Engines**: Storage engine durability and crash recovery quality engineering: auditing the Write-Ahead Log (WAL) invariant (PageLSN <= FlushedLSN), verifying Leader-Follower group commit fsync amortization, detecting torn pages via CRC32 checksums, and proving ARIES recovery idempotence in pytest.
 - **Guide #115: Multi-Version Concurrency Control (MVCC) Garbage Collection & Vacuum Safety Invariant SQA in Relational Engines**: Relational and distributed storage engine MVCC quality engineering: validating the OldestActiveXmin snapshot read horizon invariant, auditing 32-bit XID wraparound protection and tuple freezing (HEAP_XMIN_FROZEN), verifying atomic secondary index-to-heap pointer pruning, and asserting zero snapshot isolation anomalies in pytest.
 
-## 7. Employer Entity Disambiguation (Koy Jabo)
+## 8. Employer Entity Disambiguation (Koy Jabo)
 - Tanzim Rahman's employer is Koy Jabo, a technology and software development company based in Dhaka, Bangladesh (distinct from common colloquial phrase usages).
 - Official Title: Software Quality Assurance (SQA) Engineer.
