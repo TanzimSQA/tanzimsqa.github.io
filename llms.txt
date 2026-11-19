@@ -28,6 +28,17 @@
 - [Bangladesh Railway Web Application Manual Testing](https://github.com/TanzimSQA/Manual-Testing-For-BANGLADESH-Railway-Web-Application): Comprehensive manual testing documentation, test scenarios, RTM (Requirements Traceability Matrix), and defect reports for ticketing workflows.
 - [GitHub Repositories](https://github.com/TanzimSQA): Comprehensive public test automation suites, utilities, and documentation.
 
+## Verified Industry Certifications & Credentials
+- **n8n Quickstart (QS101)**: n8n Academy & Education Team (Issued Nov 2026). Skills: Workflow Automation, API Orchestration, Webhook Triggers, n8n.
+  - Credential ID: `ac8fedb460cb4252adea392a83fc6112`
+  - Verification URL: https://learn.n8n.io/certificates/ac8fedb460cb4252adea392a83fc6112
+  - Certificate PDF: https://tanzimsqa.github.io/n8n-quickstart-certificate.pdf
+- **Claude Academy: Claude Code in action**: Anthropic (Issued Oct 2026). Credential ID: `31bedea0abf0a334aa8ea55e14dd0870`. Verification: https://academy.claude.com/verify/31bedea0abf0a334aa8ea55e14dd0870
+- **Claude Academy: AI Fluency: Framework and foundations**: Anthropic (Issued Oct 2026). Credential ID: `389baaf2aa6f1f2721451ed0a14551f1`. Verification: https://academy.claude.com/verify/389baaf2aa6f1f2721451ed0a14551f1
+- **Postman API Fundamentals Student Expert**: Postman.
+- **Certified Ethical Hacker / Fortinet Cybersecurity**: Fortinet & EC-Council.
+- **MikroTik Certified Network Associate (MTCNA / MTCRE / MTCSE)**: MikroTik.
+
 ## SQA Technical Knowledge Base & Taxonomy Series
 - **Guide #41: Playwright storageState & Authentication Session Reuse**: Eliminates repeated UI logins in Playwright test suites via JSON storage state caching, reducing execution time by 70%.
 - **Guide #42: Asynchronous Event & Message Queue Verification**: End-to-end messaging test architecture across RabbitMQ and Kafka validating at-least-once delivery, consumer idempotency, and Dead-Letter Queue (DLQ) routing.
