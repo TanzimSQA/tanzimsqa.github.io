@@ -22,12 +22,17 @@ header + main > section:first-of-type,
 }
 .spotlight-card {
   width: 100%;
-  max-width: 28rem;
 }
 .profile-avatar-frame {
-  width: 12rem;
-  height: 12rem;
+  width: 11rem;
+  height: 11rem;
   max-width: 100%;
+}
+@media (min-width: 480px) {
+  .profile-avatar-frame {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
 }
 @media (min-width: 640px) {
   .profile-avatar-frame {
@@ -46,6 +51,10 @@ header + main > section:first-of-type,
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
+    overflow-x: hidden;
+    max-width: 100vw;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
   
   body {
@@ -53,6 +62,9 @@ header + main > section:first-of-type,
     color: #f1f5f9;
     font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     overflow-x: hidden;
+    max-width: 100vw;
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -454,9 +466,9 @@ header + main > section:first-of-type,
 
 /* ParrotSec Pill Badge (seen on parrotsec.org header & announcements) */
 .parrot-pill-badge {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.35rem 1rem !important;
   border: 1px solid rgba(0, 184, 219, 0.3) !important;
   background: linear-gradient(135deg, rgba(26, 26, 46, 0.6) 0%, rgba(22, 33, 62, 0.6) 100%) !important;
@@ -574,8 +586,8 @@ header + main > section:first-of-type,
   font-weight: 700 !important;
   border-radius: 8px !important;
   padding: 10px 22px !important;
-  display: inline-flex !important;
-  align-items: center !important;
+  display: inline-flex;
+  align-items: center;
   gap: 8px !important;
   box-shadow: 0 0 25px rgba(0, 255, 240, 0.35) !important;
   transition: all 0.25s ease !important;
@@ -621,4 +633,119 @@ header + main > section:first-of-type,
   background-size: 100% 3px, 6px 100%;
   pointer-events: none;
 }
+
+/* ==========================================================================
+   Multi-Device Responsive Architecture (Mobile, Tablet, Laptop, PC, 4K)
+   ========================================================================== */
+
+/* Universal Layout & Text Containment */
+* {
+  box-sizing: border-box;
+}
+
+p, span, a, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Horizontal scroll safety for code & pre tags */
+pre, code, kbd, samp {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Image Fluidity */
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  max-width: 100%;
+}
+
+/* 1. Mobile Devices (320px – 639px) */
+@media (max-width: 639px) {
+  /* Prevent side-overflow on very small viewports */
+  .spotlight-card {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Feature stack icons & content */
+  .parrot-feature-pill {
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+  
+  /* Touch-friendly buttons */
+  .parrot-btn-rect,
+  .parrot-btn-primary,
+  .parrot-btn-outline {
+    min-height: 44px;
+    justify-content: center;
+  }
+  
+  /* Interactive Lab terminal & tabs */
+  .lab-tab-btn {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 130px;
+    justify-content: center;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.75rem;
+  }
+  
+  /* JMeter bar chart responsiveness */
+  #jmeterBarContainer {
+    gap: 3px;
+  }
+  .jmeter-bar {
+    min-width: 4px;
+    border-radius: 2px 2px 0 0;
+  }
+  
+  /* Floating badges on avatar frame */
+  .float-badge-1 {
+    right: -0.25rem !important;
+    top: -0.5rem !important;
+    font-size: 10px !important;
+    padding: 2px 8px !important;
+  }
+  .float-badge-2 {
+    left: -0.25rem !important;
+    bottom: -0.5rem !important;
+    font-size: 10px !important;
+    padding: 2px 8px !important;
+  }
+}
+
+/* 2. Tablets & Small Laptops (640px – 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .spotlight-card {
+    padding: 1.5rem !important;
+  }
+  
+  .lab-tab-btn {
+    padding: 0.55rem 0.85rem;
+  }
+  
+  #jmeterBarContainer {
+    gap: 4px;
+  }
+}
+
+/* 3. Laptops & Desktops (1024px – 1439px) */
+@media (min-width: 1024px) {
+  .spotlight-card {
+    width: 100%;
+  }
+  
+  #jmeterBarContainer {
+    gap: 6px;
+  }
+}
+
+/* 4. Large Screens, PC & Ultrawide (1440px+) */
+@media (min-width: 1440px) {
+  .max-w-7xl {
+    max-width: 84rem;
+  }
+}
+
 

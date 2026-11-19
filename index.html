@@ -4112,17 +4112,14 @@
 
   <!-- Ambient Background Grids & ParrotSec Radiant Lighting Ellipses -->
 
-  <div class="fixed inset-0 bg-grid-blueprint bg-radial-vignette pointer-events-none -z-20 opacity-70"></div>
-
-  <div class="parrot-ellipse-right pointer-events-none -z-10"></div>
-
-  <div class="parrot-ellipse-left pointer-events-none -z-10"></div>
-
-  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[38rem] h-[38rem] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-10 animate-orb-1"></div>
-
-  <div class="fixed top-48 right-10 w-[34rem] h-[34rem] bg-indigo-600/10 rounded-full blur-[160px] pointer-events-none -z-10 animate-orb-2"></div>
-
-  <div class="fixed bottom-10 left-1/3 w-[34rem] h-[34rem] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none -z-10 animate-orb-1"></div>
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10" aria-hidden="true">
+    <div class="absolute inset-0 bg-grid-blueprint bg-radial-vignette opacity-70"></div>
+    <div class="parrot-ellipse-right"></div>
+    <div class="parrot-ellipse-left"></div>
+    <div class="absolute top-0 left-1/4 -translate-x-1/2 w-[22rem] sm:w-[38rem] h-[22rem] sm:h-[38rem] bg-cyan-500/10 rounded-full blur-[90px] sm:blur-[140px] animate-orb-1"></div>
+    <div class="absolute top-48 right-0 sm:right-10 w-[18rem] sm:w-[34rem] h-[18rem] sm:h-[34rem] bg-indigo-600/10 rounded-full blur-[100px] sm:blur-[160px] animate-orb-2"></div>
+    <div class="absolute bottom-10 left-1/3 w-[18rem] sm:w-[34rem] h-[18rem] sm:h-[34rem] bg-emerald-500/10 rounded-full blur-[90px] sm:blur-[140px] animate-orb-1"></div>
+  </div>
 
 
 
@@ -4138,13 +4135,13 @@
 
         <!-- Brand Logo -->
 
-        <a href="#" class="flex items-center gap-3 group">
+        <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
 
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#00FFF0] via-cyan-500 to-[#02ABB5] p-[1.5px] shadow-lg shadow-cyan-500/30 group-hover:shadow-[#00FFF0]/60 transition-all">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-[#00FFF0] via-cyan-500 to-[#02ABB5] p-[1.5px] shadow-lg shadow-cyan-500/30 group-hover:shadow-[#00FFF0]/60 transition-all">
 
             <div class="w-full h-full bg-[#080c14] rounded-[10px] flex items-center justify-center">
 
-              <i class="fa-solid fa-shield-halved text-[#00FFF0] text-sm group-hover:scale-110 transition-transform"></i>
+              <i class="fa-solid fa-shield-halved text-[#00FFF0] text-xs sm:text-sm group-hover:scale-110 transition-transform"></i>
 
             </div>
 
@@ -4152,13 +4149,13 @@
 
           <div class="flex flex-col">
 
-            <span class="font-bold text-base tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent group-hover:to-[#00FFF0] transition-all">
+            <span class="font-bold text-sm sm:text-base tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent group-hover:to-[#00FFF0] transition-all whitespace-nowrap">
 
               Tanzim Rahman
 
             </span>
 
-            <span class="text-[10px] font-mono text-[#00FFF0] tracking-wider uppercase font-semibold">SQA Engineer</span>
+            <span class="text-[9px] sm:text-[10px] font-mono text-[#00FFF0] tracking-wider uppercase font-semibold">SQA Engineer</span>
 
           </div>
 
@@ -4168,7 +4165,7 @@
 
         <!-- Desktop Navigation Links -->
 
-        <nav class="hidden lg:flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-300">
+        <nav class="hidden xl:flex items-center gap-1 2xl:gap-2 text-xs font-semibold uppercase tracking-wider text-slate-300">
 
           <a href="#expertise" class="desktop-nav-link parrot-nav-link">Expertise</a>
 
@@ -4196,9 +4193,9 @@
 
         <!-- Right Quick Actions -->
 
-        <div class="flex items-center gap-2.5 sm:gap-3">
+        <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
 
-          <button class="copy-email-btn parrot-pill-badge hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-mono text-slate-300 hover:text-[#00FFF0] transition-all shadow-sm" title="Copy email address">
+          <button class="copy-email-btn parrot-pill-badge hidden 2xl:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono text-slate-300 hover:text-[#00FFF0] transition-all shadow-sm" title="Copy email address">
 
             <i class="fa-regular fa-copy text-[#00FFF0]"></i>
 
@@ -4208,7 +4205,7 @@
 
 
 
-          <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="parrot-btn-outline hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold transition-all shadow-sm" rel="noopener noreferrer">
+          <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="parrot-btn-outline hidden sm:inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 text-xs font-semibold transition-all shadow-sm" rel="noopener noreferrer">
 
             <i class="fa-brands fa-google-drive text-[#00FFF0]"></i>
 
@@ -4218,7 +4215,7 @@
 
 
 
-          <a href="#contact" class="parrot-btn-primary inline-flex items-center gap-1.5 px-5 py-2 text-xs font-bold transition-all">
+          <a href="#contact" class="parrot-btn-primary inline-flex items-center gap-1.5 px-3.5 sm:px-5 py-2 text-xs font-bold transition-all">
 
             <i class="fa-solid fa-paper-plane text-[11px]"></i>
 
@@ -4230,7 +4227,7 @@
 
           <!-- Mobile Hamburger Menu Button -->
 
-          <button id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-lg border border-slate-800 bg-slate-900 text-slate-300 hover:text-white hover:border-slate-700 focus:outline-none">
+          <button id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle navigation menu" class="xl:hidden p-2 rounded-lg border border-slate-800 bg-slate-900 text-slate-300 hover:text-white hover:border-slate-700 focus:outline-none">
 
             <i class="fa-solid fa-bars text-base"></i>
 
@@ -4248,7 +4245,7 @@
 
     <!-- Mobile Drawer Menu -->
 
-    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-800/90 bg-[#030712]/95 backdrop-blur-2xl px-4 pt-3 pb-5 space-y-2">
+    <div id="mobileMenu" class="hidden xl:hidden border-t border-slate-800/90 bg-[#030712]/95 backdrop-blur-2xl px-4 pt-3 pb-5 space-y-2">
 
       <a href="#expertise" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-slate-900 hover:text-cyan-400">
 
@@ -4624,7 +4621,7 @@
 
           <!-- Quick Link Chips -->
 
-          <div class="flex flex-wrap items-center gap-3 pt-1 text-xs text-slate-400 font-mono">
+          <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-1 text-xs text-slate-400 font-mono">
 
             <a href="https://github.com/TanzimSQA" target="_blank" rel="me noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-[#00FFF0] transition-colors" title="Tanzim Rahman (TanzimSQA) on GitHub">
 
@@ -4632,13 +4629,13 @@
 
             </a>
 
-            <span>&bull;</span>
+            <span class="hidden sm:inline">&bull;</span>
 
             <a href="https://www.linkedin.com/in/tanzimsqa/" target="_blank" rel="me noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-[#00FFF0] transition-colors" title="Tanzim Rahman (TanzimSQA) | Tanzim SQA on LinkedIn">
               <i class="fa-brands fa-linkedin text-slate-500"></i> Tanzim Rahman (Tanzim SQA) on LinkedIn
             </a>
 
-            <span>&bull;</span>
+            <span class="hidden sm:inline">&bull;</span>
 
             <a href="https://www.facebook.com/tanzim.rahman.sqa/" target="_blank" rel="me noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-[#00FFF0] transition-colors" title="Tanzim Rahman on Facebook">
 
@@ -4646,7 +4643,7 @@
 
             </a>
 
-            <span>&bull;</span>
+            <span class="hidden sm:inline">&bull;</span>
 
             <a href="https://www.instagram.com/tanzim.sqa" target="_blank" rel="me noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-[#00FFF0] transition-colors" title="Tanzim Rahman on Instagram">
 
@@ -4654,7 +4651,7 @@
 
             </a>
 
-            <span>&bull;</span>
+            <span class="hidden sm:inline">&bull;</span>
 
             <a href="https://tanzimsqa.github.io/saucedemo-playwright-automation/" target="_blank" class="inline-flex items-center gap-1.5 text-[#00FFF0] hover:underline" rel="noopener noreferrer">
 
@@ -4668,9 +4665,9 @@
 
           <!-- Action Buttons Group (ParrotSec Cyber CTA Style) -->
 
-          <div class="flex flex-wrap gap-3.5 pt-2">
+          <div class="flex flex-wrap gap-2.5 sm:gap-3.5 pt-2">
 
-            <a href="#interactive-lab" class="parrot-btn-rect text-sm">
+            <a href="#interactive-lab" class="parrot-btn-rect text-xs sm:text-sm w-full sm:w-auto justify-center">
 
               <i class="fa-solid fa-play text-xs text-[#03232E]"></i>
 
@@ -4680,7 +4677,7 @@
 
             
 
-            <a href="#projects" class="parrot-btn-outline inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold hover:-translate-y-0.5 transition-all">
+            <a href="#projects" class="parrot-btn-outline inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold hover:-translate-y-0.5 transition-all w-full sm:w-auto">
 
               <i class="fa-solid fa-code text-[#00FFF0]"></i>
 
@@ -4690,7 +4687,7 @@
 
 
 
-            <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="parrot-btn-outline inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-emerald-300 border-emerald-500/40 hover:border-[#00FFF0] hover:-translate-y-0.5 transition-all" rel="noopener noreferrer">
+            <a href="https://drive.google.com/drive/folders/1pKx41mZC4OEFDDZoRBgoRPsGCJDE2p5D" target="_blank" class="parrot-btn-outline inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-emerald-300 border-emerald-500/40 hover:border-[#00FFF0] hover:-translate-y-0.5 transition-all w-full sm:w-auto" rel="noopener noreferrer">
 
               <i class="fa-brands fa-google-drive text-emerald-400"></i>
 
@@ -4698,7 +4695,7 @@
 
             </a>
 
-            <a href="https://www.linkedin.com/in/tanzimsqa/" target="_blank" class="parrot-btn-outline inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-cyan-300 border-cyan-500/40 hover:border-[#00FFF0] hover:-translate-y-0.5 transition-all" rel="me noopener noreferrer" title="Tanzim Rahman (Tanzim SQA) on LinkedIn">
+            <a href="https://www.linkedin.com/in/tanzimsqa/" target="_blank" class="parrot-btn-outline inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-cyan-300 border-cyan-500/40 hover:border-[#00FFF0] hover:-translate-y-0.5 transition-all w-full sm:w-auto" rel="me noopener noreferrer" title="Tanzim Rahman (Tanzim SQA) on LinkedIn">
 
               <i class="fa-brands fa-linkedin text-cyan-400"></i>
 
@@ -4818,9 +4815,9 @@
 
       <!-- ParrotSec Signature Impact Metrics Showcase ("The Parrot Project" Style) -->
 
-      <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
 
-        <div class="parrot-cyber-card p-5 group">
+        <div class="parrot-cyber-card p-4 sm:p-5 group">
 
           <div class="text-3xl font-extrabold font-mono text-[#00FFF0] tracking-tight group-hover:scale-105 transition-transform">+225</div>
 
@@ -4830,7 +4827,7 @@
 
         </div>
 
-        <div class="parrot-cyber-card p-5 group">
+        <div class="parrot-cyber-card p-4 sm:p-5 group">
 
           <div class="text-3xl font-extrabold font-mono text-[#00FFF0] tracking-tight group-hover:scale-105 transition-transform">56+</div>
 
@@ -4840,7 +4837,7 @@
 
         </div>
 
-        <div class="parrot-cyber-card p-5 group">
+        <div class="parrot-cyber-card p-4 sm:p-5 group">
 
           <div class="text-3xl font-extrabold font-mono text-[#00FFF0] tracking-tight group-hover:scale-105 transition-transform">&lt; 0.05%</div>
 
@@ -4850,13 +4847,13 @@
 
         </div>
 
-        <div class="parrot-cyber-card p-5 group">
+        <div class="parrot-cyber-card p-4 sm:p-5 group">
 
-          <div class="text-3xl font-extrabold font-mono text-[#00FFF0] tracking-tight group-hover:scale-105 transition-transform">17</div>
+          <div class="text-3xl font-extrabold font-mono text-[#00FFF0] tracking-tight group-hover:scale-105 transition-transform">18</div>
 
           <div class="text-sm font-bold text-white mt-1">Industry Credentials</div>
 
-          <p class="text-xs text-slate-400 mt-1 leading-relaxed">Anthropic Claude AI, Postman, Fortinet, and MikroTik certified.</p>
+          <p class="text-xs text-slate-400 mt-1 leading-relaxed">Anthropic Claude AI, n8n, Postman, Fortinet, and MikroTik certified.</p>
 
         </div>
 
@@ -4906,9 +4903,9 @@
 
         <!-- Lab Selector Navigation Tabs (4 Options) -->
 
-        <div class="mt-7 inline-flex flex-wrap justify-center p-1.5 rounded-2xl border border-[#00B8DB33] bg-[#080c14]/90 gap-1.5 shadow-xl">
+        <div class="mt-7 inline-flex flex-wrap justify-center p-1.5 rounded-2xl border border-[#00B8DB33] bg-[#080c14]/90 gap-1.5 shadow-xl w-full sm:w-auto max-w-full">
 
-          <button id="btnTabPlaywright" class="lab-tab-btn active flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all bg-gradient-to-r from-[#00FFF0] to-[#02ABB5] text-[#03232E] shadow-md shadow-cyan-500/25">
+          <button id="btnTabPlaywright" class="lab-tab-btn active flex items-center justify-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all bg-gradient-to-r from-[#00FFF0] to-[#02ABB5] text-[#03232E] shadow-md shadow-cyan-500/25">
 
             <i class="fa-solid fa-play text-[11px]"></i>
 
@@ -4916,7 +4913,7 @@
 
           </button>
 
-          <button id="btnTabApi" class="lab-tab-btn flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all text-slate-400 hover:text-[#00FFF0]">
+          <button id="btnTabApi" class="lab-tab-btn flex items-center justify-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all text-slate-400 hover:text-[#00FFF0]">
 
             <i class="fa-solid fa-network-wired text-[11px]"></i>
 
@@ -4924,7 +4921,7 @@
 
           </button>
 
-          <button id="btnTabJmeter" class="lab-tab-btn flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all text-slate-400 hover:text-[#00FFF0]">
+          <button id="btnTabJmeter" class="lab-tab-btn flex items-center justify-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all text-slate-400 hover:text-[#00FFF0]">
 
             <i class="fa-solid fa-gauge-high text-[11px]"></i>
 
@@ -4932,7 +4929,7 @@
 
           </button>
 
-          <button id="btnTabJira" class="lab-tab-btn flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all text-slate-400 hover:text-[#00FFF0]">
+          <button id="btnTabJira" class="lab-tab-btn flex items-center justify-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all text-slate-400 hover:text-[#00FFF0]">
 
             <i class="fa-solid fa-bug text-[11px]"></i>
 
@@ -4954,25 +4951,25 @@
 
         <!-- ParrotOS System Bar (Directly inspired by parrotsec.org desktop preview) -->
 
-        <div class="px-5 py-2 bg-[#04060d] border-b border-[#00B8DB26] flex items-center justify-between text-[11px] font-mono text-slate-400 select-none">
+        <div class="px-3 sm:px-5 py-2 bg-[#04060d] border-b border-[#00B8DB26] flex items-center justify-between text-[11px] font-mono text-slate-400 select-none">
 
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-2 sm:gap-3 min-w-0">
 
-            <span class="text-[#00FFF0] font-bold flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-[11px] text-[#00FFF0]"></i> ParrotOS v7.4</span>
+            <span class="text-[#00FFF0] font-bold flex items-center gap-1.5 shrink-0"><i class="fa-solid fa-shield-halved text-[11px] text-[#00FFF0]"></i> ParrotOS v7.4</span>
 
             <span class="text-slate-700 hidden sm:inline">&bull;</span>
 
-            <span class="text-slate-300 hidden sm:inline"><i class="fa-solid fa-terminal text-[10px] text-[#05D69E]"></i> zsh :: sdet-lab</span>
+            <span class="text-slate-300 hidden sm:inline truncate"><i class="fa-solid fa-terminal text-[10px] text-[#05D69E]"></i> zsh :: sdet-lab</span>
 
           </div>
 
-          <div class="flex items-center gap-3 text-[10px]">
+          <div class="flex items-center gap-2 sm:gap-3 text-[10px] shrink-0">
 
             <span class="text-slate-400 hidden md:inline"><i class="fa-solid fa-microchip text-[#00FFF0]"></i> CPU 3.4%</span>
 
             <span class="text-slate-400 hidden md:inline"><i class="fa-solid fa-memory text-[#05D69E]"></i> RAM 2.1/16GB</span>
 
-            <span class="text-slate-300 bg-slate-900/90 px-2.5 py-0.5 rounded border border-[#00B8DB33]"><i class="fa-solid fa-clock text-[#00FFF0] text-[9px]"></i> 14:43 UTC</span>
+            <span class="text-slate-300 bg-slate-900/90 px-2 sm:px-2.5 py-0.5 rounded border border-[#00B8DB33]"><i class="fa-solid fa-clock text-[#00FFF0] text-[9px]"></i> 14:43 UTC</span>
 
           </div>
 
@@ -4982,25 +4979,25 @@
 
         <!-- Window Top Bar (ParrotSec Cyber Terminal Bar) -->
 
-        <div class="parrot-terminal-bar px-5 py-3.5 flex items-center justify-between text-xs">
+        <div class="parrot-terminal-bar px-3 sm:px-5 py-3 sm:py-3.5 flex items-center justify-between text-xs">
 
-          <div class="flex items-center gap-2.5">
+          <div class="flex items-center gap-2 sm:gap-2.5 min-w-0">
 
-            <span class="w-3 h-3 rounded-full bg-rose-500/90 inline-block shadow-sm shadow-rose-500/50"></span>
+            <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-rose-500/90 inline-block shadow-sm shadow-rose-500/50 shrink-0"></span>
 
-            <span class="w-3 h-3 rounded-full bg-amber-500/90 inline-block shadow-sm shadow-amber-500/50"></span>
+            <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-500/90 inline-block shadow-sm shadow-amber-500/50 shrink-0"></span>
 
-            <span class="w-3 h-3 rounded-full bg-[#00FFF0] inline-block shadow-sm shadow-[#00FFF0]/60"></span>
+            <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#00FFF0] inline-block shadow-sm shadow-[#00FFF0]/60 shrink-0"></span>
 
-            <span class="ml-3 font-mono text-slate-300 font-medium" id="terminalTitle">saucedemo-e2e-suite :: pytest v9.1.1 (Python 3.11)</span>
+            <span class="ml-2 sm:ml-3 font-mono text-slate-300 font-medium truncate text-[11px] sm:text-xs" id="terminalTitle">saucedemo-e2e-suite :: pytest v9.1.1 (Python 3.11)</span>
 
           </div>
 
-          <div class="font-mono text-slate-400 flex items-center gap-2 text-[11px]">
+          <div class="font-mono text-slate-400 flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-[11px] shrink-0 ml-2">
 
             <span class="w-2 h-2 rounded-full bg-[#00FFF0] animate-pulse"></span>
 
-            <span class="text-[#00FFF0] font-semibold">Engine Active</span>
+            <span class="text-[#00FFF0] font-semibold hidden xs:inline sm:inline">Engine Active</span>
 
           </div>
 
@@ -5014,17 +5011,17 @@
 
         <!-- ================================================================= -->
 
-        <div id="panelPlaywright" class="p-6 font-mono text-xs text-slate-300 space-y-4">
+        <div id="panelPlaywright" class="p-4 sm:p-6 font-mono text-xs text-slate-300 space-y-4">
 
           
 
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800/80">
 
-            <div class="flex items-center gap-3">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 w-full sm:w-auto min-w-0">
 
-              <label for="testSuiteSelect" class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">Select Suite:</label>
+              <label for="testSuiteSelect" class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold shrink-0">Select Suite:</label>
 
-              <select id="testSuiteSelect" aria-label="Select Pytest Test Automation Suite" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono focus:outline-none focus:border-cyan-500">
+              <select id="testSuiteSelect" aria-label="Select Pytest Test Automation Suite" class="w-full sm:w-auto max-w-full px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono focus:outline-none focus:border-cyan-500 truncate">
 
                 <option value="full">Full E2E Suite (56 Pytest Tests)</option>
 
@@ -5038,7 +5035,7 @@
 
 
 
-            <button id="btnRunTests" class="btn-shimmer px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-black font-bold text-xs transition-all flex items-center gap-2 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-400/40">
+            <button id="btnRunTests" class="btn-shimmer w-full sm:w-auto justify-center px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-black font-bold text-xs transition-all flex items-center gap-2 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-400/40 shrink-0">
 
               <i class="fa-solid fa-play text-[10px]"></i>
 
@@ -5096,9 +5093,9 @@
 
           
 
-          <div class="flex flex-col sm:flex-row items-center gap-3">
+          <div class="flex flex-col md:flex-row items-stretch md:items-center gap-3">
 
-            <select id="apiEndpointSelect" aria-label="Select Target REST API Endpoint" class="w-full sm:w-auto px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-slate-200">
+            <select id="apiEndpointSelect" aria-label="Select Target REST API Endpoint" class="w-full md:w-auto px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-slate-200">
 
               <option value="railway">Bangladesh Railway Train Search API</option>
 
@@ -5108,15 +5105,17 @@
 
             </select>
 
+            <div class="flex items-center gap-2 flex-1 min-w-0">
 
+              <span id="apiMethodBadge" class="px-2.5 py-1.5 rounded bg-emerald-950 text-emerald-400 font-bold border border-emerald-800 text-[11px] shrink-0">GET</span>
 
-            <span id="apiMethodBadge" class="px-2.5 py-1 rounded bg-emerald-950 text-emerald-400 font-bold border border-emerald-800 text-[11px]">GET</span>
+              <input type="text" id="apiEndpointUrl" readonly value="https://eticket.railway.gov.bd/api/v1/trains/search?from=Dhaka&to=Chittagong" 
 
-            <input type="text" id="apiEndpointUrl" readonly value="https://eticket.railway.gov.bd/api/v1/trains/search?from=Dhaka&to=Chittagong" 
+                     class="flex-1 min-w-0 px-3 py-2 rounded-xl bg-black/60 border border-slate-800 text-slate-300 text-xs font-mono truncate" />
 
-                   class="flex-1 px-3 py-2 rounded-xl bg-black/60 border border-slate-800 text-slate-300 text-xs font-mono" />
+            </div>
 
-            <button id="btnSendApiRequest" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xs transition-all flex items-center justify-center gap-2 shrink-0">
+            <button id="btnSendApiRequest" class="w-full md:w-auto px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xs transition-all flex items-center justify-center gap-2 shrink-0">
 
               <i class="fa-solid fa-paper-plane text-[10px]"></i>
 
@@ -5318,11 +5317,11 @@
 
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
 
-            <div class="flex items-center gap-3">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 w-full sm:w-auto min-w-0">
 
-              <label for="jiraTicketSelect" class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">Select Defect Case:</label>
+              <label for="jiraTicketSelect" class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold shrink-0">Select Defect Case:</label>
 
-              <select id="jiraTicketSelect" aria-label="Select Jira Defect Life Cycle Case" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-indigo-300 text-xs font-mono focus:outline-none">
+              <select id="jiraTicketSelect" aria-label="Select Jira Defect Life Cycle Case" class="w-full sm:w-auto max-w-full px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-indigo-300 text-xs font-mono focus:outline-none truncate">
 
                 <option value="railway">RAIL-104: Seat Allocation Race Condition</option>
 
@@ -5336,7 +5335,7 @@
 
 
 
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 shrink-0 self-start sm:self-auto">
 
               <span id="jiraBugId" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-cyan-300 font-bold font-mono">RAIL-104</span>
 
@@ -6477,7 +6476,7 @@
               <span class="px-2 py-0.5 rounded-md text-[10px] font-mono bg-rose-500/10 text-rose-300 border border-rose-500/20">n8n</span>
             </div>
           </div>
-          <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+          <div class="pt-3 border-t border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
             <a href="https://tanzimsqa.github.io/n8n-quickstart-certificate.pdf" target="_blank" class="inline-flex items-center gap-1.5 text-slate-300 hover:text-rose-300 transition-colors" rel="noopener noreferrer">
               <i class="fa-solid fa-file-pdf text-rose-400"></i>
               <span>Certificate PDF</span>
@@ -7753,7 +7752,7 @@
 
       <!-- Articles Grid -->
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-8">
 
         
 
@@ -10178,7 +10177,7 @@
 
         </div>
 
-        <div class="flex items-center gap-5">
+        <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-5 gap-y-2 text-center sm:text-right">
 
           <a href="https://github.com/TanzimSQA" target="_blank" rel="me noopener noreferrer" class="hover:text-slate-300 transition-colors" title="Tanzim Rahman on GitHub">GitHub (@TanzimSQA)</a>
 
