@@ -726,7 +726,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 11. Scroll Reveal Observer
+  // 11. Scroll Reveal Observer (Safe, non-blocking, zero-threshold)
   // =========================================================================
   const revealElements = document.querySelectorAll('.reveal-init');
   if ('IntersectionObserver' in window && revealElements.length > 0) {
@@ -734,15 +734,42 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('reveal-visible');
+          entry.target.classList.remove('reveal-pending');
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.08,
-      rootMargin: '0px 0px -30px 0px'
+      threshold: 0,
+      rootMargin: '120px 0px 60px 0px'
     });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top > window.innerHeight + 80) {
+        el.classList.add('reveal-pending');
+      } else {
+        el.classList.add('reveal-visible');
+      }
+      revealObserver.observe(el);
+    });
+
+    // Fallback: ensure all elements are visible on scroll or after 600ms
+    const revealAll = () => {
+      revealElements.forEach(el => {
+        el.classList.add('reveal-visible');
+        el.classList.remove('reveal-pending');
+      });
+    };
+    window.addEventListener('scroll', () => {
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 120) {
+          el.classList.add('reveal-visible');
+          el.classList.remove('reveal-pending');
+        }
+      });
+    }, { passive: true });
+    setTimeout(revealAll, 600);
   }
 
 });
