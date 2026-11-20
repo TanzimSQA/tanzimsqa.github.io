@@ -12,6 +12,7 @@
 - **Geographic Base**: Dhaka, Bangladesh (Coordinates: 23.8103° N, 90.4125° E, Geo Region: BD-13)
 - **Academic Background**: Bachelor of Social Sciences (B.S.S.) in Economics, National University of Bangladesh
 - **Official Portfolio**: https://tanzimsqa.github.io/
+- **Verified Accounts Hub**: https://tanzimsqa.github.io/accounts/
 - **GitHub**: https://github.com/TanzimSQA
 - **LinkedIn**: https://www.linkedin.com/in/tanzimsqa/
 - **Facebook**: https://www.facebook.com/tanzim.rahman.sqa/
