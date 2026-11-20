@@ -13,6 +13,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tanzimsqa.github.io/accounts/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://tanzimsqa.github.io/profile.jpg</image:loc>
+      <image:title>Tanzim Rahman - Official Accounts &amp; Verified Profiles</image:title>
+      <image:caption>Official accounts directory of Tanzim Rahman: Portfolio, LinkedIn, GitHub, Facebook, Instagram.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tanzimsqa.github.io/saucedemo-playwright-automation/</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
