@@ -20,6 +20,12 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
+User-agent: YandexBot
+Allow: /
+
+User-agent: SeznamBot
+Allow: /
+
 # AI & LLM Assistants (GEO - Generative Engine Optimization)
 User-agent: GPTBot
 Allow: /
