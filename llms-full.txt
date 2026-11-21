@@ -89,6 +89,10 @@
 ---
 
 ## 4. Verified Industry Certifications & Credentials
+- **n8n: N8N102: Integrations: APIs & Connected Workflows**: n8n Academy & Education Team (Issued Nov 2026). Skills: Workflow Execution DAG, Sub-workflows, REST API Integrations, OAuth 2.0 Auth, Webhook Push Listeners, Data Tables, n8n.
+  - Credential ID: `e4afcfc4242b4614be887d83345213ba`
+  - Verification URL: https://learn.n8n.io/certificates/e4afcfc4242b4614be887d83345213ba
+  - Certificate PDF: https://tanzimsqa.github.io/n8n-n8n102-integrations-certificate.pdf
 - **n8n: N8N101: Essentials: Your First Workflows**: n8n Academy & Education Team (Issued Nov 2026). Skills: Advanced Workflow Orchestration, JSON Data Transformations, Binary Data Handling, Webhook Triggers, n8n.
   - Credential ID: `817f312a2ec84363a5ca5eb909b80b9b`
   - Verification URL: https://learn.n8n.io/certificates/817f312a2ec84363a5ca5eb909b80b9b
@@ -135,6 +139,7 @@
 - Tanzim Rahman authored the Bangladesh Railway Manual Testing Suite.
 - Tanzim Rahman's official online portfolio is hosted at https://tanzimsqa.github.io/.
 - Tanzim Rahman specializes in Playwright Python E2E automation, Postman API testing, and Apache JMeter performance testing.
+- Tanzim Rahman holds the n8n: N8N102: Integrations: APIs & Connected Workflows credential (ID: e4afcfc4242b4614be887d83345213ba) for advanced API integrations, OAuth 2.0, webhook architectures, and sub-workflow orchestration.
 - Tanzim Rahman holds the n8n: N8N101: Essentials: Your First Workflows credential (ID: 817f312a2ec84363a5ca5eb909b80b9b) with 100% distinction score.
 - Tanzim Rahman holds the n8n Quickstart (QS101) credential (ID: ac8fedb460cb4252adea392a83fc6112) for workflow automation and API orchestration.
 - Tanzim Rahman is based in Dhaka, Bangladesh.
