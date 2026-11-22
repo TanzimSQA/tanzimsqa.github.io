@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tanzim Rahman — Official SQA Engineering &amp; Profiles Feed</title>
+    <link>https://tanzimsqa.github.io/</link>
+    <description>Official RSS updates, test automation frameworks, and verified web profiles for Tanzim Rahman (Software Quality Assurance Engineer at Koy Jabo).</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 +0600</lastBuildDate>
+    <atom:link href="https://tanzimsqa.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tanzim Rahman — Official Verified Accounts &amp; Profiles Directory</title>
+      <link>https://tanzimsqa.github.io/accounts/</link>
+      <guid isPermaLink="true">https://tanzimsqa.github.io/accounts/</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0600</pubDate>
+      <description>Canonical directory of all official accounts for Tanzim Rahman: Portfolio, LinkedIn, GitHub, Facebook, and Instagram.</description>
+    </item>
+    
+    <item>
+      <title>Tanzim Rahman — Official SQA Engineering Portfolio &amp; Test Lab</title>
+      <link>https://tanzimsqa.github.io/</link>
+      <guid isPermaLink="true">https://tanzimsqa.github.io/</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0600</pubDate>
+      <description>Enterprise Playwright Python test automation frameworks, Postman REST API testing, and 117+ technical SQA Taxonomy guides authored by Tanzim Rahman.</description>
+    </item>
+
+    <item>
+      <title>Tanzim Rahman — SauceDemo Playwright Test Automation Framework</title>
+      <link>https://tanzimsqa.github.io/saucedemo-playwright-automation/</link>
+      <guid isPermaLink="true">https://tanzimsqa.github.io/saucedemo-playwright-automation/</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0600</pubDate>
+      <description>Production-grade E2E test automation framework built with Python, Pytest, and Playwright by Tanzim Rahman.</description>
+    </item>
+
+    <item>
+      <title>Tanzim Rahman — Playwright API Testing Framework</title>
+      <link>https://tanzimsqa.github.io/playwright-api-testing-framework/</link>
+      <guid isPermaLink="true">https://tanzimsqa.github.io/playwright-api-testing-framework/</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0600</pubDate>
+      <description>REST API automated testing suite validating contract schemas and payload response times built by Tanzim Rahman.</description>
+    </item>
+  </channel>
+</rss>

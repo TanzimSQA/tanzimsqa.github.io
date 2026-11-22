@@ -55,5 +55,6 @@ Allow: /
 # https://tanzimsqa.github.io/llms.txt
 # https://tanzimsqa.github.io/llms-full.txt
 
-# XML Sitemap
+# XML Sitemap & RSS Feed
 Sitemap: https://tanzimsqa.github.io/sitemap.xml
+Sitemap: https://tanzimsqa.github.io/feed.xml
