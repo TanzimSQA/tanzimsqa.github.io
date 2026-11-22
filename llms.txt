@@ -41,6 +41,10 @@
 - [GitHub Repositories](https://github.com/TanzimSQA): Comprehensive public test automation suites, utilities, and documentation.
 
 ## Verified Industry Certifications & Credentials
+- **Introduction to Artificial Intelligence**: Simplilearn & SkillUp Series (Issued Nov 2026). Skills: Artificial Intelligence (AI), Machine Learning Workflows, Deep Learning & Neural Networks, Supervised & Unsupervised Learning, Computer Vision, and AI Social Impact.
+  - Credential ID: `11067405`
+  - Verification URL: https://simpli-web.app.link/e/dUnFevKnh8b
+  - Certificate PDF: https://tanzimsqa.github.io/introduction-to-artificial-intelligence-certificate.pdf
 - **n8n Course: No Code AI Agent Builder**: Simplilearn & SkillUp Series (Issued Nov 2026). Skills: Autonomous AI Agents, Multi-Agent Collaboration, Prompt Engineering, Vector Database Embeddings, Tool Calling, Webhook Automations, and Enterprise No-Code Workflow Integration.
   - Credential ID: `11064959`
   - Verification URL: https://simpli-web.app.link/e/YRGHzIVhh8b
