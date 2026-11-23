@@ -528,10 +528,26 @@ header + main > section:first-of-type,
 
 /* ParrotSec Desktop Nav Link Hover Style */
 .parrot-nav-link {
-  padding: 6px 14px;
+  padding: 4px 7px;
+  font-size: 11px;
   border-radius: 6px;
   border: 1px solid transparent;
   transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+@media (min-width: 1280px) {
+  .parrot-nav-link {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .parrot-nav-link {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
 }
 
 .parrot-nav-link:hover {
@@ -666,54 +682,11 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 /* ==========================================================================
    Universal All-Device Responsive Design Engine
-   Mobile (320px) -> Phablets -> Tablets -> Laptops -> Desktops -> 4K Ultrawide
+   Mobile Phones (320px+) | Tablets | Laptops (1024px+) | Desktop PCs | 4K UHD
    ========================================================================== */
 
-/* 0. Ultra-Small Devices (320px – 375px: iPhone SE, Foldable Cover Displays) */
-@media (max-width: 375px) {
-  .profile-avatar-frame {
-    width: 9.5rem !important;
-    height: 9.5rem !important;
-  }
-  
-  .spotlight-card {
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
-    border-radius: 1rem !important;
-  }
-  
-  .parrot-cyber-card,
-  .parrot-cyber-card-leadership {
-    padding: 0.65rem 0.75rem !important;
-    border-radius: 6px 18px 6px 6px !important;
-  }
-  
-  .float-badge-1, .float-badge-2 {
-    font-size: 9px !important;
-    padding: 2px 6px !important;
-  }
-  
-  .lab-tab-btn {
-    flex: 1 1 100% !important;
-    min-width: 100% !important;
-    padding: 0.45rem 0.6rem !important;
-    font-size: 11px !important;
-  }
-  
-  h1 {
-    font-size: 1.75rem !important;
-    line-height: 1.15 !important;
-  }
-  
-  .parrot-pill-badge {
-    padding: 0.25rem 0.65rem !important;
-    font-size: 10.5px !important;
-  }
-}
-
-/* 1. Standard Mobile Devices (320px – 639px) */
+/* 1. Mobile Phones (320px – 639px) */
 @media (max-width: 639px) {
-  /* Prevent side-overflow and ensure zero horizontal scrolling */
   body, html {
     overflow-x: hidden !important;
     max-width: 100vw !important;
@@ -724,7 +697,6 @@ img, svg, video, canvas, audio, iframe, embed, object {
     padding-right: 1rem !important;
   }
   
-  /* Feature stack icons & content */
   .parrot-feature-pill {
     padding: 0.75rem 1rem;
     gap: 0.75rem;
@@ -788,7 +760,49 @@ img, svg, video, canvas, audio, iframe, embed, object {
   }
 }
 
-/* 2. Mobile Landscape Orientation (Orientation: landscape and height <= 500px) */
+/* 1b. Ultra-Small Phones (320px – 375px: iPhone SE, Foldable Cover Displays) */
+@media (max-width: 375px) {
+  .profile-avatar-frame {
+    width: 9.5rem !important;
+    height: 9.5rem !important;
+  }
+  
+  .spotlight-card {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    border-radius: 1rem !important;
+  }
+  
+  .parrot-cyber-card,
+  .parrot-cyber-card-leadership {
+    padding: 0.65rem 0.75rem !important;
+    border-radius: 6px 18px 6px 6px !important;
+  }
+  
+  .float-badge-1, .float-badge-2 {
+    font-size: 9px !important;
+    padding: 2px 6px !important;
+  }
+  
+  .lab-tab-btn {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    padding: 0.45rem 0.6rem !important;
+    font-size: 11px !important;
+  }
+  
+  h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.15 !important;
+  }
+  
+  .parrot-pill-badge {
+    padding: 0.25rem 0.65rem !important;
+    font-size: 10.5px !important;
+  }
+}
+
+/* 2. Mobile Landscape Mode (height <= 500px) */
 @media (max-height: 500px) and (orientation: landscape) {
   #mobileMenu {
     max-height: calc(100vh - 56px) !important;
@@ -805,7 +819,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
   }
 }
 
-/* 3. Tablets & Small Laptops (640px – 1023px: iPads, Surface, Tablets) */
+/* 3. Tablets & Surface Pro (640px – 1023px) */
 @media (min-width: 640px) and (max-width: 1023px) {
   .spotlight-card {
     padding: 1.5rem !important;
@@ -826,33 +840,63 @@ img, svg, video, canvas, audio, iframe, embed, object {
   }
 }
 
-/* 4. Laptops & Standard Desktops (1024px – 1439px: MacBooks, Ultrabooks, FHD) */
-@media (min-width: 1024px) {
+/* 4. Laptops & Ultrabooks (1024px – 1439px: e.g. 13.3", 14", 15.6" at 125%/150% scaling) */
+@media (min-width: 1024px) and (max-width: 1439px) {
   .spotlight-card {
     width: 100%;
+    padding: 1.35rem !important;
+  }
+  
+  #jmeterBarContainer {
+    gap: 5px;
+  }
+  
+  .profile-avatar-frame {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+  
+  .parrot-cyber-card,
+  .parrot-cyber-card-leadership {
+    padding: 1rem 1.15rem !important;
+  }
+  
+  .lab-tab-btn {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* 5. Desktop PCs & FHD Monitors (1440px – 1919px: e.g. 1920x1080 Full HD) */
+@media (min-width: 1440px) {
+  .max-w-7xl {
+    max-width: 86rem;
+  }
+  
+  .spotlight-card {
+    padding: 1.75rem !important;
   }
   
   #jmeterBarContainer {
     gap: 6px;
   }
   
-  .lab-tab-btn {
-    padding: 0.5rem 1rem;
-    flex: 0 0 auto;
+  .profile-avatar-frame {
+    width: 14rem;
+    height: 14rem;
   }
 }
 
-/* 5. Large Screens & 2K QHD (1440px – 2559px) */
-@media (min-width: 1440px) {
+/* 6. 2K QHD, 4K UHD & Ultrawide Displays (1920px – 3840px+) */
+@media (min-width: 1920px) {
   .max-w-7xl {
-    max-width: 86rem;
+    max-width: 94rem !important;
   }
 }
 
-/* 6. Ultrawide & 4K UHD Displays (2560px – 3840px+) */
 @media (min-width: 2560px) {
   .max-w-7xl {
-    max-width: 100rem !important;
+    max-width: 105rem !important;
   }
   
   body {
@@ -862,54 +906,4 @@ img, svg, video, canvas, audio, iframe, embed, object {
   .spotlight-card {
     padding: 2.25rem !important;
   }
-}
-
-
-
-
-/* ==========================================================================
-   ZeroDefect Hub & Executive Tech Accents (High Visual Attractiveness)
-   ========================================================================== */
-.card-glass-elevated {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(2, 6, 23, 0.85) 100%);
-  border: 1px solid rgba(0, 255, 240, 0.25);
-  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-}
-
-@keyframes cyberGlowPulse {
-  0%, 100% {
-    box-shadow: 0 0 20px -5px rgba(0, 255, 240, 0.35);
-  }
-  50% {
-    box-shadow: 0 0 35px 2px rgba(5, 214, 158, 0.5);
-  }
-}
-
-.cyber-glow-pulse {
-  animation: cyberGlowPulse 4s ease-in-out infinite;
-}
-
-.badge-leadership {
-  background: linear-gradient(90deg, rgba(0, 255, 240, 0.15) 0%, rgba(5, 214, 158, 0.15) 100%);
-  border: 1px solid rgba(0, 255, 240, 0.4);
-  color: #00FFF0;
-}
-
-.parrot-cyber-card-leadership {
-  position: relative;
-  background: linear-gradient(135deg, rgba(8, 14, 26, 0.95) 0%, rgba(3, 7, 18, 0.9) 100%);
-  border: 1.5px solid rgba(0, 255, 240, 0.4);
-  border-radius: 8px 32px 8px 8px;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  overflow: hidden;
-}
-
-.parrot-cyber-card-leadership:hover {
-  border-color: #00FFF0;
-  box-shadow: 0 15px 40px -5px rgba(0, 255, 240, 0.35), inset 0 0 25px rgba(5, 214, 158, 0.15);
-  transform: translateY(-3px);
 }

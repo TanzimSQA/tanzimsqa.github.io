@@ -774,3 +774,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+  // Auto-close mobile drawer menu on desktop/laptop resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+      mobileMenu.classList.add('hidden');
+      if (mobileMenuBtn) {
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      }
+    }
+  });
