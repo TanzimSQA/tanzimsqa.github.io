@@ -4692,11 +4692,15 @@
 
 
 
-            <!-- Profile Photo Frame with Conic Gradient Ring -->
+            <!-- Profile Photo Frame with Conic Gradient Aura Ring -->
 
-            <div class="profile-avatar-frame relative w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full p-[3px] bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500 shadow-2xl shadow-cyan-950/70 mb-6 group ring-4 ring-cyan-500/20">
+            <div class="profile-avatar-frame relative w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full p-[3px] shadow-2xl shadow-cyan-950/80 mb-6 group">
 
-              <div class="w-full h-full rounded-full overflow-hidden relative bg-slate-950">
+              <!-- Rotating Conic Aura Rings -->
+              <div class="conic-glow-ring" aria-hidden="true"></div>
+              <div class="conic-glow-ring-inner" aria-hidden="true"></div>
+
+              <div class="w-full h-full rounded-full overflow-hidden relative bg-slate-950 z-[2]">
 
                 <img src="profile.jpg" alt="Tanzim Rahman (TanzimSQA) - Software Quality Assurance Engineer" width="460" height="460" decoding="async" fetchpriority="high" style="aspect-ratio: 1 / 1;" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
 

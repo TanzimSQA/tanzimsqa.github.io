@@ -159,18 +159,18 @@ header + main > section:first-of-type,
 /* Modern Spotlight Card Effect (Tracked via mouse position) */
 .spotlight-card {
   position: relative;
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  background: rgba(14, 20, 32, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 184, 219, 0.22);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 0 20px rgba(0, 255, 240, 0.02);
   transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
 .spotlight-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(0, 255, 240, 0.45);
-  box-shadow: 0 20px 40px -15px rgba(0, 255, 240, 0.2), 0 0 25px -5px rgba(2, 171, 181, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border-color: rgba(0, 255, 240, 0.55);
+  box-shadow: 0 20px 45px -15px rgba(0, 255, 240, 0.22), 0 0 30px -5px rgba(2, 171, 181, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 0 25px rgba(0, 255, 240, 0.06);
 }
 
 .spotlight-card::before {
@@ -652,6 +652,76 @@ header + main > section:first-of-type,
   );
   background-size: 100% 3px, 6px 100%;
   pointer-events: none;
+}
+
+/* ==========================================================================
+   Dynamic Conic Aura Ring for Hero Avatar & Visual Polish
+   ========================================================================== */
+
+@keyframes spinConic {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.conic-glow-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 9999px;
+  background: conic-gradient(from 0deg, #00FFF0, #6366f1, #a855f7, #05D69E, #00FFF0);
+  animation: spinConic 10s linear infinite;
+  filter: blur(8px);
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.profile-avatar-frame:hover .conic-glow-ring {
+  opacity: 0.95;
+  filter: blur(12px);
+  animation-duration: 6s;
+}
+
+.conic-glow-ring-inner {
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+  background: conic-gradient(from 180deg, #00FFF0 0%, #3b82f6 30%, #a855f7 60%, #05D69E 85%, #00FFF0 100%);
+  animation: spinConic 8s linear infinite reverse;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Luminous Cyber Section Dividers */
+.cyber-divider {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 3rem auto;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 184, 219, 0.15) 20%, rgba(0, 255, 240, 0.5) 50%, rgba(99, 102, 241, 0.15) 80%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cyber-divider::after {
+  content: '◆';
+  font-size: 9px;
+  color: #00FFF0;
+  background: #020617;
+  padding: 0 10px;
+  filter: drop-shadow(0 0 6px #00FFF0);
+}
+
+/* High-Contrast Neon Glow Accents */
+.neon-border-glow {
+  border: 1px solid rgba(0, 255, 240, 0.35);
+  box-shadow: 0 0 15px rgba(0, 255, 240, 0.15), inset 0 0 15px rgba(0, 255, 240, 0.05);
+}
+.neon-border-glow:hover {
+  border-color: #00FFF0;
+  box-shadow: 0 0 25px rgba(0, 255, 240, 0.3), inset 0 0 20px rgba(0, 255, 240, 0.1);
 }
 
 /* ==========================================================================
