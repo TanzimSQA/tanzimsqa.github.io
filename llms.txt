@@ -74,6 +74,9 @@
 - **MikroTik Certified Network Associate (MTCNA / MTCRE / MTCSE)**: MikroTik.
 
 ## SQA Technical Knowledge Base & Taxonomy Series
+- **LinkedIn Post (Nov 2026): Soak / Extended Session Manual Testing**: Long-duration QA analysis of browser memory creep, heap retainers, auth token silent refresh race conditions, background tab throttling, and IndexedDB growth (https://www.linkedin.com/in/tanzimsqa/).
+- **LinkedIn Post (Nov 2026): Content & Microcopy Testing (Taxonomy #29)**: Systematic UI copy validation covering actionable error messages, tone consistency, tooltips, and GDPR/privacy compliance links (https://www.linkedin.com/in/tanzimsqa/).
+- **LinkedIn Post (Nov 2026): Automated Unit Testing Foundation in SQA**: Shift-left functional test automation using Arrange-Act-Assert, dependency mocking, Pytest fixtures, JUnit, TestNG, and NUnit (https://www.linkedin.com/in/tanzimsqa/).
 - **Guide #41: Playwright storageState & Authentication Session Reuse**: Eliminates repeated UI logins in Playwright test suites via JSON storage state caching, reducing execution time by 70%.
 - **Guide #42: Asynchronous Event & Message Queue Verification**: End-to-end messaging test architecture across RabbitMQ and Kafka validating at-least-once delivery, consumer idempotency, and Dead-Letter Queue (DLQ) routing.
 - **Guide #43: Persistence Layer & Database State Assertions in API Automation**: Direct SQL verification against relational test databases (PostgreSQL/MySQL) pairing HTTP assertions with physical backend state.
