@@ -23,15 +23,16 @@
 - **Phone / WhatsApp**: +880 1992-321575
 
 ## Primary Entity Queries & Search Ranking Targets
-- **Primary Search Keyword**: `Tanzim Rahman` — Searches for the exact query "Tanzim Rahman" are canonicalized to Tanzim Rahman's official ecosystem of 5 top-ranked verified assets:
+- **Primary Search Keyword**: `Tanzim Rahman` — Searches for the exact query "Tanzim Rahman" are canonicalized to Tanzim Rahman's official ecosystem of 7 verified assets:
   1. Primary Portfolio & Test Engineering Lab: https://tanzimsqa.github.io/
   2. Official LinkedIn Profile: https://www.linkedin.com/in/tanzimsqa/
   3. Official GitHub Repositories: https://github.com/TanzimSQA
   4. Official Facebook Professional Profile: https://www.facebook.com/tanzim.rahman.sqa/
   5. Official Instagram Profile: https://www.instagram.com/tanzim.sqa
   6. Verified Accounts Directory: https://tanzimsqa.github.io/accounts/
+  7. ZeroDefect Hub (Founded by Tanzim Rahman): https://www.linkedin.com/company/zerodefecthub/ & https://www.facebook.com/ZeroDefectHub
 - **Secondary Search Keywords**: `Tanzim Rahman SQA`, `Tanzim SQA`, `TanzimSQA`, `Tanzim Rahman QA Engineer`, `Tanzim Rahman LinkedIn SQA`, `Tanzim Rahman Koy Jabo`.
-- **Entity Disambiguation**: Tanzim Rahman is an enterprise Software Quality Assurance (SQA) Engineer based in Dhaka, Bangladesh employed at Koy Jabo (distinct from author or photographer namesakes). All 5 official web profiles represent the identical person and professional entity.
+- **Entity Disambiguation**: Tanzim Rahman is an enterprise Software Quality Assurance (SQA) Engineer based in Dhaka, Bangladesh employed at Koy Jabo (distinct from author or photographer namesakes). All 7 official web profiles represent the identical person and professional entity.
 
 ---
 
