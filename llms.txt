@@ -43,6 +43,10 @@
 - [GitHub Repositories](https://github.com/TanzimSQA): Comprehensive public test automation suites, utilities, and documentation.
 
 ## Verified Industry Certifications & Credentials
+- **Apache JMeter™ Autocorrelation Recorder**: BlazeMeter University (Issued Nov 2026). Skills: Apache JMeter, Autocorrelation, JMeter Correlation Recorder, Performance Testing.
+  - Credential ID: `E-XVDPQV`
+  - Course URL: https://university.blazemeter.com/learn/courses/492/jmeter-autocorrelation-recorder
+  - Certificate PDF: https://tanzimsqa.github.io/blazemeter-jmeter-autocorrelation-recorder-certificate.pdf
 - **Introduction to Artificial Intelligence**: Simplilearn & SkillUp Series (Issued Nov 2026). Skills: Artificial Intelligence (AI), Machine Learning Workflows, Deep Learning & Neural Networks, Supervised & Unsupervised Learning, Computer Vision, and AI Social Impact.
   - Credential ID: `11067405`
   - Verification URL: https://simpli-web.app.link/e/dUnFevKnh8b
